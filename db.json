@@ -1,98 +1,15 @@
 [
   {
-    "ref": "0939d5cd-fa91-479b-a779-089eff760a37",
-    "answer": "buenas",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "0c25a5553005621d864683760b4f6d69"
-  },
-  {
-    "ref": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
-    "keyword": "key_0412694c-21b4-411b-bc44-2d4052ee981b",
-    "answer": "__call_action__",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "9c918821fcfa6df8d3512bc9b84b3eb1",
-    "from": "573185215524"
-  },
-  {
-    "ref": "99da5bdd-6ab6-485f-918b-dfe2fa30d24f",
-    "keyword": null,
-    "answer": "¡Buenas tardes Andres G! Soy Conny, creadora de Solteros y Parceros 💘\nGracias por escribirnos esta tarde 🙌\n📲 En Instagram y TikTok conectamos solteros y solteras de todo el mundo 🌍\nY también creamos espacios geniales para que las marcas se den a conocer 🎯",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "573185215524",
-    "refSerialize": "84ae9866b4634e322cffc632117df8b6"
-  },
-  {
-    "ref": "ans_cfca9207-d86a-4c8d-8070-9c0848759973",
-    "keyword": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
-    "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": true,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "a049bd522e18dfe7866149f8fb1af15b",
-    "from": "573185215524"
-  },
-  {
-    "ref": "11c42776-248a-414d-a313-30f4c1f6fc52",
-    "keyword": "a049bd522e18dfe7866149f8fb1af15b",
-    "answer": "1",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
-  },
-  {
-    "ref": "ans_2ddf5f81-cb4c-451f-9620-97ed17de5520",
-    "keyword": "key_eb8fb47a-e09a-4c6e-aedf-74e3ab0bcebc",
-    "answer": "__call_action__",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "from": "573185215524"
-  },
-  {
-    "ref": "7d4cf976-3562-4c37-aa6a-dc6203b93c2a",
+    "ref": "e17428c8-4b9e-481f-8868-b4b8f958dffc",
+    "keyword": "30aee7ce99356498fa048b6b8bdbdad8",
     "answer": "Hola",
     "options": {},
     "from": "573185215524",
     "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
   },
   {
-    "ref": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
-    "keyword": "key_0412694c-21b4-411b-bc44-2d4052ee981b",
+    "ref": "ans_becd73ac-8e40-42ee-8dc7-ae92afab4628",
+    "keyword": "key_8b762309-99db-4491-8504-b8a799913949",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -106,13 +23,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "9c918821fcfa6df8d3512bc9b84b3eb1",
+    "refSerialize": "39a2b4e0cc5c5cd3e3c33e02a9d2984f",
     "from": "573185215524"
   },
   {
-    "ref": "a57d7146-54dd-455b-b0c6-ac6d1ee6d409",
+    "ref": "cd1c637c-2c88-4d01-8b63-534315afcfe0",
     "keyword": null,
-    "answer": "¡Hey Andres G! Soy Conny, la creadora de Solteros y Parceros 💘\n¡Gracias por contactarnos! 🙌\nConectamos a solteros por el mundo vía Instagram y TikTok 🌍\nY además, ofrecemos espacios para que las marcas se luzcan ✨",
+    "answer": "¡Hola Andres G! Soy Conny, quien está detrás de Solteros y Parceros 💘\nGracias por escribirnos 🙌\nEn Instagram y TikTok reunimos solteros y solteras del mundo 🌍\nY también damos visibilidad a marcas que quieren llegar más lejos 💥",
     "options": {
       "media": null,
       "buttons": [],
@@ -120,11 +37,11 @@
       "delay": 0
     },
     "from": "573185215524",
-    "refSerialize": "23610a982abe28b2b9d44f59baf16bcd"
+    "refSerialize": "599fc5517c1d10e30f4660ddebc894a7"
   },
   {
-    "ref": "ans_cfca9207-d86a-4c8d-8070-9c0848759973",
-    "keyword": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
+    "ref": "ans_9d7e503b-f73b-45b0-99f8-0137d265ab1c",
+    "keyword": "ans_becd73ac-8e40-42ee-8dc7-ae92afab4628",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
     "options": {
       "media": null,
@@ -138,20 +55,20 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "a049bd522e18dfe7866149f8fb1af15b",
+    "refSerialize": "479177d6441de66115e93388c40d78d5",
     "from": "573185215524"
   },
   {
-    "ref": "35b5c036-f376-412b-a0ec-e7d1df113782",
-    "keyword": "a049bd522e18dfe7866149f8fb1af15b",
+    "ref": "c6896b91-a9e7-48f9-8d8c-701cecf0e0a4",
+    "keyword": "479177d6441de66115e93388c40d78d5",
     "answer": "1",
     "options": {},
     "from": "573185215524",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_cadde1a7-20e7-47a7-b168-254115124beb",
-    "keyword": "key_4a1721db-4c84-4c3c-a7d9-2e5228d47edc",
+    "ref": "ans_e518c18b-9cb7-4df4-bf88-c4875283e20e",
+    "keyword": "key_31b9b80b-d731-4bd8-b4a3-1e6659de6758",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -166,5 +83,62 @@
       "callback": true
     },
     "from": "573185215524"
+  },
+  {
+    "ref": "ans_fe1932a2-23c5-4ab3-901c-da7f1a9e5cef",
+    "keyword": "ans_e518c18b-9cb7-4df4-bf88-c4875283e20e",
+    "answer": "Por favor, selecciona una opción:\n\n*1*. Servicios para empresas\n*2*. Solicitar cotización\n*3*. Casos de éxito\n*4*. Volver al menú principal",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "573185215524"
+  },
+  {
+    "ref": "b6369476-c05c-4293-8132-e4bf099bbfd1",
+    "answer": "4",
+    "options": {},
+    "from": "573185215524",
+    "refSerialize": "e8139b7fa2fbc1b48f247924f8ad1961"
+  },
+  {
+    "ref": "ans_ac4e5d25-636c-4c47-9ba0-70a7d9858444",
+    "keyword": "key_f9e6fdc5-f3e8-4890-b01a-0831d47757f2",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "5be6fdcd8969e21ca8ec690a96c5271a",
+    "from": "573185215524"
+  },
+  {
+    "ref": "c6bec243-d436-4059-b108-65daa223507b",
+    "keyword": null,
+    "answer": "Hmm, no estoy seguro de cómo ayudarte con eso. ¿Podrías darme más detalles?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "5f66ede127b6e01d20029c4772a8fcaf"
   }
 ]

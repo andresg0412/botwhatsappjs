@@ -13,8 +13,9 @@ const antibanUtils = require('../utils/antibanUtils');
  * @returns {Object} Flujo del menú configurado
  */
 const createEntrevistasFlow = (provider) => {
-  return addKeyword(['4'])
+  return addKeyword(EVENTS.ACTION)
     .addAction(async (ctx, { flowDynamic, endFlow }) => {
+      const chatId = ctx.from;
       // Verificar si estamos en horario de atención
       /*if (!isWorkingHours()) {
         const outOfHoursMessage = getOutOfHoursMessage();
@@ -38,7 +39,7 @@ const createEntrevistasFlow = (provider) => {
       //const menuResponse = getRandomResponse(menuResponses);
       
       // Verificar si es seguro enviar un mensaje (anti-ban)
-      if (!isSafeToSendMessage()) {
+      if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
         console.log('No es seguro enviar mensaje, saltando respuesta');
         return endFlow();
       }

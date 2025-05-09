@@ -110,7 +110,17 @@ const createWelcomeFlow = (provider) => {
             case '1':
               // Opción 1: Ir al flujo de Empresas
               console.log('Usuario eligió opción 1: Empresas');
-              return gotoFlow(empresasFlow);
+              await applyRandomDelay(async () => {
+                await flowDynamic(antibanUtils.sanitizeMessage(
+                  "Accediendo a la sección de empresas..."
+                ));
+              });
+              await antibanUtils.registerMessageSent(chatId);
+              
+              // Enviar un mensaje que active el flujo de empresas
+              await new Promise(resolve => setTimeout(resolve, 1000));
+              await flowDynamic({ body: "empresas" });
+              break;
               
             case '2':
               // Opción 2: Ir al flujo de Solteros Anonimos

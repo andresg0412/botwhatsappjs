@@ -29,6 +29,10 @@ const { unknownResponses } = require('./responses/general');
 const createWelcomeFlow = require('./flows/welcomeFlow');
 const createMenuFlow = require('./flows/menuFlow');
 const { createWeatherFlow, createNewsFlow } = require('./flows/serviceFlow');
+const createEmpresasFlow = require('./flows/empresasFlow');
+const createSolterosAnonimosFlow = require('./flows/solterosAnonimosFlow');
+const createHistoriasFlow = require('./flows/historiasFlow');
+const createEntrevistasFlow = require('./flows/entrevistasFlow');
 
 // Flujo principal para capturar mensajes que no coinciden con otros flujos
 const mainFlow = addKeyword([])
@@ -132,6 +136,10 @@ const main = async () => {
   const menuFlow = createMenuFlow(adapterProvider);
   const weatherFlow = createWeatherFlow(adapterProvider);
   const newsFlow = createNewsFlow(adapterProvider);
+  const empresasFlow = createEmpresasFlow(adapterProvider);
+  const solterosAnonimosFlow = createSolterosAnonimosFlow(adapterProvider);
+  const historiasFlow = createHistoriasFlow(adapterProvider);
+  const entrevistasFlow = createEntrevistasFlow(adapterProvider);
   
   // Crear el bot con todos los flujos
   const bot = await createBot({
@@ -140,6 +148,10 @@ const main = async () => {
       menuFlow,
       weatherFlow,
       newsFlow,
+      empresasFlow,
+      solterosAnonimosFlow,
+      historiasFlow,
+      entrevistasFlow,
       mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
     ]),
     provider: adapterProvider,

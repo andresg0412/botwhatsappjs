@@ -1,15 +1,14 @@
 [
   {
-    "ref": "8d56a16e-ed97-4f98-9309-d755ec034942",
-    "keyword": "e9b3c252697e2a2edab33892a988f290",
-    "answer": "Hey",
+    "ref": "0939d5cd-fa91-479b-a779-089eff760a37",
+    "answer": "buenas",
     "options": {},
     "from": "573185215524",
-    "refSerialize": "277c8cb949f2e3dbc96f9369fddf7be3"
+    "refSerialize": "0c25a5553005621d864683760b4f6d69"
   },
   {
-    "ref": "ans_21cb1416-ec2e-4b2f-ac16-1c1e3b02869a",
-    "keyword": "key_4d5687b3-c897-4931-a635-c1379bf46cb8",
+    "ref": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
+    "keyword": "key_0412694c-21b4-411b-bc44-2d4052ee981b",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -23,13 +22,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "809792061d96ee856db1470def9cdc4a",
+    "refSerialize": "9c918821fcfa6df8d3512bc9b84b3eb1",
     "from": "573185215524"
   },
   {
-    "ref": "bb13c838-21ca-47b2-948d-0fccefd1072e",
+    "ref": "99da5bdd-6ab6-485f-918b-dfe2fa30d24f",
     "keyword": null,
-    "answer": "¡Buenos días, Andres G! 🌅 Soy Conny, fundadora de Solteros y Parceros 💘\nGracias por empezar tu día con nosotros 🙌\nEn nuestras redes como Instagram y TikTok conectamos a corazones libres 🌍\nY también ofrecemos espacios para que las marcas se hagan notar 🎯",
+    "answer": "¡Buenas tardes Andres G! Soy Conny, creadora de Solteros y Parceros 💘\nGracias por escribirnos esta tarde 🙌\n📲 En Instagram y TikTok conectamos solteros y solteras de todo el mundo 🌍\nY también creamos espacios geniales para que las marcas se den a conocer 🎯",
     "options": {
       "media": null,
       "buttons": [],
@@ -37,11 +36,11 @@
       "delay": 0
     },
     "from": "573185215524",
-    "refSerialize": "5a32e0905ace47165280f1e62fc735f2"
+    "refSerialize": "84ae9866b4634e322cffc632117df8b6"
   },
   {
-    "ref": "ans_87386f66-aac5-4547-ac54-63d715a51b1b",
-    "keyword": "ans_21cb1416-ec2e-4b2f-ac16-1c1e3b02869a",
+    "ref": "ans_cfca9207-d86a-4c8d-8070-9c0848759973",
+    "keyword": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
     "options": {
       "media": null,
@@ -55,33 +54,20 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "16e2ca6ab719f7630a818f804c4bb1e3",
+    "refSerialize": "a049bd522e18dfe7866149f8fb1af15b",
     "from": "573185215524"
   },
   {
-    "ref": "817a09f9-534c-4325-91fe-5a5cb356eaba",
-    "keyword": "16e2ca6ab719f7630a818f804c4bb1e3",
-    "answer": "3",
+    "ref": "11c42776-248a-414d-a313-30f4c1f6fc52",
+    "keyword": "a049bd522e18dfe7866149f8fb1af15b",
+    "answer": "1",
     "options": {},
     "from": "573185215524",
-    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "18266d59-9f42-4f72-9a7d-dfd245ee1d73",
-    "keyword": null,
-    "answer": "🏢 *Sobre Nosotros*\n\nSomos una empresa dedicada a proporcionar soluciones innovadoras para nuestros clientes. Fundada en 2010, hemos crecido constantemente gracias a la confianza de nuestros usuarios.\n\nNuestra misión es ofrecer servicios de alta calidad con atención personalizada.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "573185215524",
-    "refSerialize": "c1559a139b2d1581a7a29b60785faba9"
-  },
-  {
-    "ref": "ans_d83e46d3-01d7-4d0a-9008-08b2fd0615f6",
-    "keyword": "key_9ddfbb7a-4abe-4c49-b55a-c6c1f5c8e277",
+    "ref": "ans_2ddf5f81-cb4c-451f-9620-97ed17de5520",
+    "keyword": "key_eb8fb47a-e09a-4c6e-aedf-74e3ab0bcebc",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -98,13 +84,79 @@
     "from": "573185215524"
   },
   {
-    "ref": "ans_97aef152-a79b-484b-a04c-0bfcf2587e5a",
-    "keyword": "ans_d83e46d3-01d7-4d0a-9008-08b2fd0615f6",
+    "ref": "7d4cf976-3562-4c37-aa6a-dc6203b93c2a",
+    "answer": "Hola",
+    "options": {},
+    "from": "573185215524",
+    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+  },
+  {
+    "ref": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
+    "keyword": "key_0412694c-21b4-411b-bc44-2d4052ee981b",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9c918821fcfa6df8d3512bc9b84b3eb1",
+    "from": "573185215524"
+  },
+  {
+    "ref": "a57d7146-54dd-455b-b0c6-ac6d1ee6d409",
+    "keyword": null,
+    "answer": "¡Hey Andres G! Soy Conny, la creadora de Solteros y Parceros 💘\n¡Gracias por contactarnos! 🙌\nConectamos a solteros por el mundo vía Instagram y TikTok 🌍\nY además, ofrecemos espacios para que las marcas se luzcan ✨",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "23610a982abe28b2b9d44f59baf16bcd"
+  },
+  {
+    "ref": "ans_cfca9207-d86a-4c8d-8070-9c0848759973",
+    "keyword": "ans_75cf1651-36b6-47ad-8c7e-489cdbb7f3a8",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
     "options": {
       "media": null,
       "buttons": [],
       "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "a049bd522e18dfe7866149f8fb1af15b",
+    "from": "573185215524"
+  },
+  {
+    "ref": "35b5c036-f376-412b-a0ec-e7d1df113782",
+    "keyword": "a049bd522e18dfe7866149f8fb1af15b",
+    "answer": "1",
+    "options": {},
+    "from": "573185215524",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_cadde1a7-20e7-47a7-b168-254115124beb",
+    "keyword": "key_4a1721db-4c84-4c3c-a7d9-2e5228d47edc",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
       "child": null,
       "delay": 0,
       "idle": null,

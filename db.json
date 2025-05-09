@@ -1,0 +1,162 @@
+[
+  {
+    "ref": "a43b7c90-5f80-450d-ab76-e82f7ff39430",
+    "keyword": "bbe4fcbdf24953e04187ce259e288738",
+    "answer": "Hola",
+    "options": {},
+    "from": "573185215524",
+    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+  },
+  {
+    "ref": "ans_901ef600-7034-47c8-aa90-0eb0ba48ad57",
+    "keyword": "key_6b72ef8b-c712-463a-bdf1-721a7efe341a",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "3bb40d711f835e1e7bb8ca466d925cb6",
+    "from": "573185215524"
+  },
+  {
+    "ref": "fec61942-0d5f-4fa0-9d9d-22f9d90ee849",
+    "keyword": null,
+    "answer": "¡Hola Andres G! Espero que hayas tenido un buen día. 🌜 Soy Conny, fundadora de Solteros y Parceros 💘\nGracias por escribirnos esta noche 💬\n📱 Unimos corazones solteros en nuestras redes y apoyamos a marcas que quieren destacarse 🌍💼",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "a6dbdbe76f4ec9f90ff85d4f1d66ac19"
+  },
+  {
+    "ref": "66016cdc-3d98-429b-b922-6945f31610cd",
+    "keyword": null,
+    "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "43b82b1dc4ee7e62a6018abb84413907"
+  },
+  {
+    "ref": "ans_e65efd0f-0afd-42e6-805a-cbe43489e027",
+    "keyword": "ans_901ef600-7034-47c8-aa90-0eb0ba48ad57",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "bd204cb398cd485184b72297bfc54bf0",
+    "from": "573185215524"
+  },
+  {
+    "ref": "8cf16a33-5a26-4d88-8a08-8b050125166e",
+    "keyword": null,
+    "answer": "⚠️ Opción no válida. Por favor, elige una opción del 1 al 4.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "eb5864c0cbf8a0ff23f5b946b4f0a98d"
+  },
+  {
+    "ref": "ans_d8b7b446-9e96-43e9-9de3-f216577e29eb",
+    "keyword": "key_d34d6f25-d0cd-4914-acea-902ca5d0fe05",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "573185215524"
+  },
+  {
+    "ref": "ans_22bdbe62-b3b4-47ec-b02d-d6c9055f44ce",
+    "keyword": "ans_d8b7b446-9e96-43e9-9de3-f216577e29eb",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "from": "573185215524"
+  },
+  {
+    "ref": "a1212e98-9ec3-4767-8023-447012a682e4",
+    "answer": "1",
+    "options": {},
+    "from": "573185215524",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_0ac22325-c589-4fd8-9a04-f34c2805b3f4",
+    "keyword": "key_3d045dbb-85dd-4179-82ec-5307f2eece24",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "ea666a270e44e19146b5e84fa5f05fdb",
+    "from": "573185215524"
+  },
+  {
+    "ref": "741c7785-0757-4d63-be3f-f487a329bea2",
+    "keyword": null,
+    "answer": "Hmm, no estoy seguro de cómo ayudarte con eso. ¿Podrías darme más detalles?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "5f66ede127b6e01d20029c4772a8fcaf"
+  }
+]

@@ -35,7 +35,7 @@ const createHistoriasFlow = require('./flows/historiasFlow');
 const createEntrevistasFlow = require('./flows/entrevistasFlow');
 
 // Flujo principal para capturar mensajes que no coinciden con otros flujos
-const mainFlow = addKeyword([])
+/*const mainFlow = addKeyword([])
   .addAction(async (ctx, { flowDynamic, endFlow }) => {
     const chatId = ctx.from;
     console.log('Mensaje recibido:', ctx.body);
@@ -114,7 +114,7 @@ const mainFlow = addKeyword([])
     await antibanUtils.registerMessageSent(chatId);
     return endFlow();
     
-  });
+  });*/
 
 // Función principal para iniciar el bot
 const main = async () => {
@@ -132,14 +132,28 @@ const main = async () => {
   const adapterProvider = createProvider(BaileysProvider);
   
   // Crear flujos de conversación
-  const welcomeFlow = createWelcomeFlow(adapterProvider);
   const menuFlow = createMenuFlow(adapterProvider);
   const weatherFlow = createWeatherFlow(adapterProvider);
   const newsFlow = createNewsFlow(adapterProvider);
-  const empresasFlow = createEmpresasFlow(adapterProvider);
+  const empresasFlows = createEmpresasFlow(adapterProvider);
+  const { empresasFlow, empresaInteresadoSi } = empresasFlows;
   const solterosAnonimosFlow = createSolterosAnonimosFlow(adapterProvider);
   const historiasFlow = createHistoriasFlow(adapterProvider);
   const entrevistasFlow = createEntrevistasFlow(adapterProvider);
+
+  // Crear welcomeFlow con referencias a los otros flujos
+  const welcomeFlow = createWelcomeFlow(adapterProvider, {
+    empresasFlow,
+    solterosAnonimosFlow,
+    historiasFlow,
+    entrevistasFlow
+  });
+
+  // Actualizar las referencias en los otros flujos
+  empresasFlow.ref = { welcomeFlow };
+  solterosAnonimosFlow.ref = { welcomeFlow };
+  historiasFlow.ref = { welcomeFlow };
+  entrevistasFlow.ref = { welcomeFlow };
   
   // Crear el bot con todos los flujos
   const bot = await createBot({
@@ -149,19 +163,21 @@ const main = async () => {
       weatherFlow,
       newsFlow,
       empresasFlow,
+      empresaInteresadoSi,
       solterosAnonimosFlow,
       historiasFlow,
       entrevistasFlow,
-      mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
+      //mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
     ]),
     provider: adapterProvider,
     database: adapterDB
   });
-  QRPortalWeb()
+  QRPortalWeb();
   
   // Mensaje de inicio exitoso
   console.log('¡Bot de WhatsApp iniciado correctamente!');
   console.log('Escanea el código QR para iniciar sesión');
+  return bot;
 };
 
 // Iniciar el bot

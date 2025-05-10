@@ -9,27 +9,24 @@ const antibanUtils = require('../utils/antibanUtils');
 const { greetings, getTimeBasedGreetings } = require('../responses/greetings');
 const { menuOptions } = require('../responses/responsesConstants');
 
-// Importar los otros flujos que queremos usar
-const { createWeatherFlow } = require('./serviceFlow');
-const createMenuFlow = require('./menuFlow');
-const createEmpresasFlow = require('./empresasFlow');
-const createSolterosAnonimosFlow = require('./solterosAnonimosFlow');
-const createHistoriasFlow = require('./historiasFlow');
-const createEntrevistasFlow = require('./entrevistasFlow');
-
 /**
  * Crea el flujo de bienvenida
  * @param {Object} provider - Proveedor de WhatsApp
  * @returns {Object} Flujo de bienvenida configurado
  */
-const createWelcomeFlow = (provider) => {
+const createWelcomeFlow = (provider, { empresasFlow, solterosAnonimosFlow, historiasFlow, entrevistasFlow } = {}) => {
+
+  // Importar los otros flujos que queremos usar
+  //const createEmpresasFlow = require('./empresasFlow');
+  //const createSolterosAnonimosFlow = require('./solterosAnonimosFlow');
+  //const createHistoriasFlow = require('./historiasFlow');
+  //const createEntrevistasFlow = require('./entrevistasFlow');
+
   // Crear instancias de los otros flujos
-  //const serviceFlow = createWeatherFlow(provider);
-  //const menuFlow = createMenuFlow(provider);
-  const empresasFlow = createEmpresasFlow(provider);
-  const solterosAnonimosFlow = createSolterosAnonimosFlow(provider);
-  const historiasFlow = createHistoriasFlow(provider);
-  const entrevistasFlow = createEntrevistasFlow(provider);
+  //const empresasFlow = createEmpresasFlow(provider);
+  //const solterosAnonimosFlow = createSolterosAnonimosFlow(provider);
+  //const historiasFlow = createHistoriasFlow(provider);
+  //const entrevistasFlow = createEntrevistasFlow(provider);
 
   return addKeyword(['hola','Hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'ola', 'hi', 'hello', 'que tal', 'qué tal', 'que onda','qué onda','buenos días','hi','hello','saludos','menú','menu','info','información','inicio','quiero info','quiero información','necesito info','necesito información'])
     // Primer paso: Enviar el saludo
@@ -95,7 +92,7 @@ const createWelcomeFlow = (provider) => {
       async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
         try {
           const chatId = ctx.from;
-          const userResponse = ctx.body.trim();
+          const userResponse = ctx.body.toLowerCase().trim();
           
           console.log(`Respuesta del usuario al menú: "${userResponse}"`);
           
@@ -105,50 +102,32 @@ const createWelcomeFlow = (provider) => {
             return;
           }
           
-          // Procesar la respuesta del usuario
-          switch (userResponse) {
-            case '1':
-              // Opción 1: Ir al flujo de Empresas
-              console.log('Usuario eligió opción 1: Empresas');
-              await applyRandomDelay(async () => {
-                await flowDynamic(antibanUtils.sanitizeMessage(
-                  "Accediendo a la sección de empresas..."
-                ));
-              });
-              await antibanUtils.registerMessageSent(chatId);
-              
-              // Enviar un mensaje que active el flujo de empresas
-              await new Promise(resolve => setTimeout(resolve, 1000));
-              await flowDynamic({ body: "empresas" });
-              break;
-              
-            case '2':
-              // Opción 2: Ir al flujo de Solteros Anonimos
-              console.log('Usuario eligió opción 2: Solteros Anonimos');
-              return gotoFlow(solterosAnonimosFlow);
-              
-            case '3':
-              // Opción 3: Ir al flujo de Historias
-              console.log('Usuario eligió opción 3: Historias');
-              return gotoFlow(historiasFlow);
-              
-            case '4':
-              // Opción 4: Ir al flujo de Entrevistas
-              console.log('Usuario eligió opción 4: Entrevistas');
-              return gotoFlow(entrevistasFlow);
-              
-            default:
-              // Opción no válida
-              console.log('Usuario eligió una opción no válida:', userResponse);
-              await applyRandomDelay(async () => {
-                await flowDynamic(antibanUtils.sanitizeMessage(
-                  "⚠️ Opción no válida. Por favor, elige una opción del 1 al 4."
-                ));
-              });
-              await antibanUtils.registerMessageSent(chatId);
-              
-              // Usar fallBack para volver a mostrar el menú y esperar otra respuesta
-              return fallBack();
+          // Navegar al flujo correspondiente según la respuesta
+          if (userResponse.includes('1') || userResponse.includes('empresa')) {
+            console.log('Navegando al flujo de empresas');
+            if (empresasFlow) return gotoFlow(empresasFlow);
+          } 
+          else if (userResponse.includes('2') || userResponse.includes('solter')) {
+            console.log('Navegando al flujo de solteros anónimos');
+            if (solterosAnonimosFlow) return gotoFlow(solterosAnonimosFlow);
+          } 
+          else if (userResponse.includes('3') || userResponse.includes('historia')) {
+            console.log('Navegando al flujo de historias');
+            if (historiasFlow) return gotoFlow(historiasFlow);
+          } 
+          else if (userResponse.includes('4') || userResponse.includes('entrevista')) {
+            console.log('Navegando al flujo de entrevistas');
+            if (entrevistasFlow) return gotoFlow(entrevistasFlow);
+          } 
+          else {
+            // Respuesta no reconocida
+            await applyRandomDelay(async () => {
+              await flowDynamic(antibanUtils.sanitizeMessage(
+                'No he entendido tu respuesta. Por favor, selecciona una opción válida del menú (1-4).'
+              ));
+            });
+            await antibanUtils.registerMessageSent(chatId);
+            return fallBack();
           }
         } catch (error) {
           console.error('Error en el flujo de bienvenida (procesamiento de respuesta):', error);

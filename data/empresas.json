@@ -1,0 +1,18 @@
+{
+  "empresas": {
+    "573185215524": [
+      {
+        "chatId": "573185215524",
+        "fechaRegistro": "2025-05-10T01:23:10.605Z",
+        "informacion": "Nombre empresa, tecnología, video",
+        "estado": "pendiente"
+      },
+      {
+        "chatId": "573185215524",
+        "fechaRegistro": "2025-05-10T01:59:48.645Z",
+        "informacion": "Nueva empresa, Bucaramanga, tecnología, idea nueva",
+        "estado": "pendiente"
+      }
+    ]
+  }
+}

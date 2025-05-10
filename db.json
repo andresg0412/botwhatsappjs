@@ -1,15 +1,15 @@
 [
   {
-    "ref": "18d87d9c-e08e-4c68-ae54-c64ddc843435",
-    "keyword": "00d42ca457ecf76a4913aa5ec1646935",
-    "answer": "Hola",
+    "ref": "fbf05ce9-92dd-42bc-9e18-4082e2ba9f8f",
+    "keyword": "555491104a14efca375238139d65d33f",
+    "answer": "hola",
     "options": {},
-    "from": "573185215524",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+    "from": "573177999872",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
   },
   {
-    "ref": "ans_609713d1-1706-4c19-9135-aac57744fa6e",
-    "keyword": "key_4ec9f5e6-e479-43c2-a459-d93c1a62f419",
+    "ref": "ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5",
+    "keyword": "key_97c2f160-0cca-44b3-a46f-c4e63044fb8d",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -23,25 +23,44 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "c28e26f138a9f6dfa4f07e84a338f8c5",
+    "refSerialize": "76cf7e27171bcee8f9d05c1b8931c083",
+    "from": "573177999872"
+  },
+  {
+    "ref": "ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5",
+    "keyword": "key_97c2f160-0cca-44b3-a46f-c4e63044fb8d",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "76cf7e27171bcee8f9d05c1b8931c083",
     "from": "573185215524"
   },
   {
-    "ref": "88f6d936-dea6-4989-9149-4fedef04109a",
+    "ref": "5c0ee422-2da7-4c7f-a909-5ce3ad9a66a9",
     "keyword": null,
-    "answer": "¡Buenas noches! 🌌 Soy Conny, quien está detrás de Solteros y Parceros 💘\nQué bueno recibir tu mensaje esta noche 💖\n📲 En Instagram y TikTok conectamos solteros por el mundo 🌍\nY también ofrecemos espacios donde las marcas pueden brillar ⭐",
+    "answer": "¡Hola Karol Quintero! Soy Conny, la mente detrás de Solteros y Parceros 💘\n¡Gracias por pasarte por aquí! 🙌\n📱 En Instagram y TikTok unimos solteros de todas partes del mundo 🌍\nAdemás, creamos espacios donde las marcas pueden brillar ✨",
     "options": {
       "media": null,
       "buttons": [],
       "capture": false,
       "delay": 0
     },
-    "from": "573185215524",
-    "refSerialize": "718dead1c890d437a45f93bf9dd69710"
+    "from": "573177999872",
+    "refSerialize": "ca7a038a95d3ab5f5b9a5dff8959a2e8"
   },
   {
-    "ref": "ans_f5d3408e-ed16-456c-981e-0e32e4722ff8",
-    "keyword": "ans_609713d1-1706-4c19-9135-aac57744fa6e",
+    "ref": "ans_1c5d4791-a8f8-4106-b314-6cf1be96e388",
+    "keyword": "ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
     "options": {
       "media": null,
@@ -55,20 +74,98 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "8da59dcd32e427714a069ace39eee901",
+    "refSerialize": "e0a641d8a35302df2706f2b6d55f6f54",
+    "from": "573177999872"
+  },
+  {
+    "ref": "a5fa5087-ff54-4829-90fb-748eb05d9cfa",
+    "keyword": null,
+    "answer": "¡Hola Andres G! Aquí Conny, creadora de Solteros y Parceros 💘\nGracias por escribirnos 🙌\nUsamos Instagram y TikTok para unir solteros de todo el mundo 🌍\nY también apoyamos a marcas que quieren destacar 🚀",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573185215524",
+    "refSerialize": "0bf0e034f377f73b94b2145b8e09d843"
+  },
+  {
+    "ref": "ans_1c5d4791-a8f8-4106-b314-6cf1be96e388",
+    "keyword": "ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5",
+    "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. Pauta Empresas\n*2*. Presentando solteros (con o sin foto)\n*3*. Historias\n*4*. Entrevista Presencial\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "e0a641d8a35302df2706f2b6d55f6f54",
     "from": "573185215524"
   },
   {
-    "ref": "0aad9f97-469b-4f07-94d2-19ae31272431",
-    "keyword": "8da59dcd32e427714a069ace39eee901",
+    "ref": "906b4c53-3ae5-405e-a891-0967bea58b8b",
+    "keyword": "e0a641d8a35302df2706f2b6d55f6f54",
+    "answer": "2",
+    "options": {},
+    "from": "573177999872",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "98eb2fc0-d665-4471-88e5-b0e32630b239",
+    "keyword": "e0a641d8a35302df2706f2b6d55f6f54",
     "answer": "1",
     "options": {},
     "from": "573185215524",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_236d59b3-bb3d-4a53-99a5-11fe2112962e",
-    "keyword": "key_af8e37df-607a-42a6-851a-838a16213e6a",
+    "ref": "ans_79cc9732-bc2b-46bd-9c00-db22c506098a",
+    "keyword": "key_6b24bb29-d181-4ea6-a856-56ad6d2f7fd7",
+    "answer": "💘 ¡Bienvenido a Soltero Anónimo! 💘\n\n¿Listo para encontrar tu media naranja? 🍊\n\nPor solo $200.000 COP, te presentamos en nuestra cuenta de Instagram de forma creativa y anónima, generando curiosidad y atrayendo posibles matches 💌\n\n¿Qué incluye el servicio?\n✅ Te mostramos al mundo sin revelar tu identidad\n✅ Aumentás tu visibilidad en una comunidad 100% dedicada a solteros\n✅ Podés conocer a alguien especial de forma original y divertida 😍\n¿Te animás a presentarte? 🔥\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 8000,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "5479967aad2bf1842951a767e2562e6f",
+    "from": "573177999872"
+  },
+  {
+    "ref": "ans_94c0c345-3c21-4bd8-801a-c599984bfee7",
+    "keyword": "ans_79cc9732-bc2b-46bd-9c00-db22c506098a",
+    "answer": "Escribinos y te contamos cómo hacerlo paso a paso 💬\n\nPor favor, elige una opción para continuar:\n\n1️⃣ Estoy muy animado\n2️⃣ No me interesaría el servicio\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 13500,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "e882c0ca76769fba3a555721a2287f69",
+    "from": "573177999872"
+  },
+  {
+    "ref": "ans_84d8eb49-4c24-4f5e-8f06-3e444cfe38d7",
+    "keyword": "key_8c71569e-a2e8-48bf-825e-ed60b4fc27a1",
     "answer": "📢 ¡Gracias por tu interés en publicitar con Solteros y Parceros!\n\nEn el siguiente enlace puedes ver toda la información sobre nuestros servicios de publicidad para marcas y negocios 👇\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n",
     "options": {
       "media": null,
@@ -82,12 +179,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "9241943434b58141bd7a778cf0d9996c",
+    "refSerialize": "3cd5dc7519eb14fbbe71b2fff501ef79",
     "from": "573185215524"
   },
   {
-    "ref": "ans_d9785735-88d4-49a5-a482-400a3832f034",
-    "keyword": "ans_236d59b3-bb3d-4a53-99a5-11fe2112962e",
+    "ref": "ans_4c0a2d7e-3901-4242-815c-a0e68567feee",
+    "keyword": "ans_84d8eb49-4c24-4f5e-8f06-3e444cfe38d7",
     "answer": "💰 Estas son nuestras tarifas actuales:\n\n🎬 Video en TikTok — $500\n🎥 Video en Instagram — $450\n📲 2 historias — $200\n📲 3 historias — $300\n🎁 Concurso flash (2 historias) — $250\n📦 Combo TikTok + Instagram — $700\n",
     "options": {
       "media": null,
@@ -101,12 +198,12 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "6d449b6ec8a7d2d47bfd115a1a1076da",
+    "refSerialize": "bdaa3cd582677fc510e6c1ad201da0c7",
     "from": "573185215524"
   },
   {
-    "ref": "ans_f358970f-a434-4627-8119-bffe9b1dbda1",
-    "keyword": "ans_d9785735-88d4-49a5-a482-400a3832f034",
+    "ref": "ans_48b3a31a-612b-4b88-b792-751968e9f5ef",
+    "keyword": "ans_4c0a2d7e-3901-4242-815c-a0e68567feee",
     "answer": "Si estás interesado y quieres más información personalizada, por favor responde con el número 1 nuevamente y te atenderé directamente 🤝",
     "options": {
       "media": null,
@@ -120,55 +217,7 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "5b8961f333731721ebdde3bc5ca17199",
+    "refSerialize": "f451410ac44453144cb74e56eb986be6",
     "from": "573185215524"
-  },
-  {
-    "ref": "859007cb-7ee4-4b74-93b6-17c27317c8ae",
-    "keyword": "5b8961f333731721ebdde3bc5ca17199",
-    "answer": "1",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
-  },
-  {
-    "ref": "ans_465b1047-eb01-45b5-bf50-b85ee9f138bf",
-    "keyword": "key_2600931e-075c-4328-bbbf-25f7d9e29e09",
-    "answer": "¡Genial! Gracias por tu interés en promocionar con Solteros y Parceros.\n\nPara continuar con el proceso, por favor envíanos la siguiente información:\n\n📌 Nombre de la empresa o negocio\n📍 Ubicación completa (País, ciudad y dirección)\n🏢 Tipo de negocio\n💡 Idea o enfoque que te gustaría que usemos para tu promoción\n\nAgradecemos nos puedas responder con esta información en un (1) mismo mensaje\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": true,
-      "child": null,
-      "delay": 5000,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "b9646381fd53b10863757ac91873429e",
-    "from": "573185215524"
-  },
-  {
-    "ref": "364319d8-b39a-4588-8a7c-b3e0ea783371",
-    "keyword": "b9646381fd53b10863757ac91873429e",
-    "answer": "Nueva empresa, Bucaramanga, tecnología, idea nueva",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "fc91f932d88d9a1419d838e0982581d0"
-  },
-  {
-    "ref": "50d13211-250e-4ea7-8792-9bfa80526958",
-    "keyword": null,
-    "answer": "🙏 Gracias por confiar en nosotros.\n\nHemos recibido la información, ahora la analizaremos y en un plazo máximo de 48 horas me comunicaré contigo para revisar las opciones más adecuadas según tus gustos, objetivos y con base en nuestra experiencia en la promoción de negocios y marcas 🧠✨\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "573185215524",
-    "refSerialize": "afa0ab03d6a674af953aebc3c0f47561"
   }
 ]

@@ -28,11 +28,11 @@ const { unknownResponses } = require('./responses/general');
 // Importar flujos
 const createWelcomeFlow = require('./flows/welcomeFlow');
 const createMenuFlow = require('./flows/menuFlow');
-const { createWeatherFlow, createNewsFlow } = require('./flows/serviceFlow');
 const createEmpresasFlow = require('./flows/empresasFlow');
 const createSolterosAnonimosFlow = require('./flows/solterosAnonimosFlow');
 const createHistoriasFlow = require('./flows/historiasFlow');
 const createEntrevistasFlow = require('./flows/entrevistasFlow');
+const createUnknownFlow = require('./flows/unknownFlow');
 
 // Flujo principal para capturar mensajes que no coinciden con otros flujos
 /*const mainFlow = addKeyword([])
@@ -133,40 +133,59 @@ const main = async () => {
   
   // Crear flujos de conversación
   const menuFlow = createMenuFlow(adapterProvider);
-  const weatherFlow = createWeatherFlow(adapterProvider);
-  const newsFlow = createNewsFlow(adapterProvider);
-  const empresasFlows = createEmpresasFlow(adapterProvider);
+  const unknownFlow = createUnknownFlow(adapterProvider);
+
+  const empresasFlows = createEmpresasFlow(adapterProvider, { unknownFlow });
   const { empresasFlow, empresaInteresadoSi } = empresasFlows;
-  const solterosAnonimosFlow = createSolterosAnonimosFlow(adapterProvider);
-  const historiasFlow = createHistoriasFlow(adapterProvider);
-  const entrevistasFlow = createEntrevistasFlow(adapterProvider);
+
+  const solterosAnonimosFlows = createSolterosAnonimosFlow(adapterProvider, { unknownFlow });
+  const { solterosFlow, solteroInteresadoSi} = solterosAnonimosFlows;
+
+  const historiasFlows = createHistoriasFlow(adapterProvider, { unknownFlow });
+  const { historiasFlow, historiasInteresadoSi } = historiasFlows;
+
+  const entrevistasFlows = createEntrevistasFlow(adapterProvider, { unknownFlow });
+  const { entrevistaFlow, entrevistaInteresadoSi } = entrevistasFlows;
+
+  unknownFlow.ref = {
+    welcomeFlow: null,
+    empresasFlow,
+    solterosFlow,
+    historiasFlow,
+    entrevistaFlow
+  };
 
   // Crear welcomeFlow con referencias a los otros flujos
   const welcomeFlow = createWelcomeFlow(adapterProvider, {
     empresasFlow,
-    solterosAnonimosFlow,
+    solterosFlow,
     historiasFlow,
-    entrevistasFlow
+    entrevistaFlow,
+    unknownFlow
   });
 
+  unknownFlow.ref.welcomeFlow = welcomeFlow;
+
   // Actualizar las referencias en los otros flujos
-  empresasFlow.ref = { welcomeFlow };
-  solterosAnonimosFlow.ref = { welcomeFlow };
-  historiasFlow.ref = { welcomeFlow };
-  entrevistasFlow.ref = { welcomeFlow };
+  empresasFlow.ref = { welcomeFlow, unknownFlow };
+  solterosFlow.ref = { welcomeFlow, unknownFlow };
+  historiasFlow.ref = { welcomeFlow, unknownFlow };
+  entrevistaFlow.ref = { welcomeFlow, unknownFlow };
   
   // Crear el bot con todos los flujos
   const bot = await createBot({
     flow: createFlow([
       welcomeFlow,
       menuFlow,
-      weatherFlow,
-      newsFlow,
       empresasFlow,
       empresaInteresadoSi,
-      solterosAnonimosFlow,
+      solterosFlow,
+      solteroInteresadoSi,
       historiasFlow,
-      entrevistasFlow,
+      historiasInteresadoSi,
+      entrevistaFlow,
+      entrevistaInteresadoSi,
+      unknownFlow
       //mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
     ]),
     provider: adapterProvider,

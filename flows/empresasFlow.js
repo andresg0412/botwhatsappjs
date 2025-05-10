@@ -18,7 +18,7 @@ const {
  * @param {Object} provider - Proveedor de WhatsApp
  * @returns {Object} Flujo de empresas configurado
  */
-const createEmpresasFlow = (provider) => {
+const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const empresaInteresadoSi = addKeyword([])
     .addAnswer(
@@ -71,7 +71,7 @@ const createEmpresasFlow = (provider) => {
     .addAnswer(
       preguntaInteresado,
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack }) => {
+      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de empresas - Paso 3');
           const chatId = ctx.from;
@@ -94,10 +94,15 @@ const createEmpresasFlow = (provider) => {
             console.log('El cliente no esta interesado');
             await flowDynamic("Ok, gracias por tu tiempo. Escribe *hola* cuando necesites algo más.");
             return endFlow(); // ✅ Termina correctamente el flujo
-          } 
+          }
+          else {
+            // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
+            console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
+            if (unknownFlow) return gotoFlow(unknownFlow);
+          }
         } catch (error) {
           console.error('Error en el flujo de empresas (paso 2):', error);
-          return fallBack();
+          return endFlow();
         }
       }
     );

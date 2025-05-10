@@ -1,11 +1,32 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573185215524@s.whatsapp.net',
+    remoteJid: '573177999872@s.whatsapp.net',
     fromMe: false,
-    id: '3A1AD0419B4A5AAB9B86',
+    id: '3A33F5C59BAB8000132B',
     participant: undefined
   },
-  messageTimestamp: 1746842297,
+  messageTimestamp: 1746899857,
+  pushName: 'Karol Quintero',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'hola',
+  from: '573177999872'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573185215524@s.whatsapp.net',
+    fromMe: false,
+    id: '3A2781B893FD91173B2C',
+    participant: undefined
+  },
+  messageTimestamp: 1746899864,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
@@ -20,8 +41,8 @@
   from: '573185215524'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_609713d1-1706-4c19-9135-aac57744fa6e',
-  keyword: 'key_4ec9f5e6-e479-43c2-a459-d93c1a62f419',
+  ref: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
+  keyword: 'key_97c2f160-0cca-44b3-a46f-c4e63044fb8d',
   answer: '__call_action__',
   options: {
     media: null,
@@ -35,11 +56,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c28e26f138a9f6dfa4f07e84a338f8c5'
+  refSerialize: '76cf7e27171bcee8f9d05c1b8931c083'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f5d3408e-ed16-456c-981e-0e32e4722ff8',
-  keyword: 'ans_609713d1-1706-4c19-9135-aac57744fa6e',
+  ref: 'ans_1c5d4791-a8f8-4106-b314-6cf1be96e388',
+  keyword: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
   answer: 'Por favor, elige la opción que más te interese 👇\n' +
     '\n' +
     '*1*. Pauta Empresas\n' +
@@ -58,16 +79,78 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '8da59dcd32e427714a069ace39eee901'
+  refSerialize: 'e0a641d8a35302df2706f2b6d55f6f54'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
+  keyword: 'key_97c2f160-0cca-44b3-a46f-c4e63044fb8d',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '76cf7e27171bcee8f9d05c1b8931c083'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_1c5d4791-a8f8-4106-b314-6cf1be96e388',
+  keyword: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
+  answer: 'Por favor, elige la opción que más te interese 👇\n' +
+    '\n' +
+    '*1*. Pauta Empresas\n' +
+    '*2*. Presentando solteros (con o sin foto)\n' +
+    '*3*. Historias\n' +
+    '*4*. Entrevista Presencial\n',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'e0a641d8a35302df2706f2b6d55f6f54'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573177999872@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD72D18B70F0C8F94FB',
+    participant: undefined
+  },
+  messageTimestamp: 1746899879,
+  pushName: 'Karol Quintero',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  from: '573177999872'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3A8A16357E7DDF31E2B7',
+    id: '3AE0E35BF163B55380F7',
     participant: undefined
   },
-  messageTimestamp: 1746842309,
+  messageTimestamp: 1746899886,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
@@ -79,47 +162,5 @@
     }
   },
   body: '1',
-  from: '573185215524'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573185215524@s.whatsapp.net',
-    fromMe: false,
-    id: '3AA6FF1F437E85DEC730',
-    participant: undefined
-  },
-  messageTimestamp: 1746842346,
-  pushName: 'Andres G',
-  broadcast: false,
-  message: Message {
-    conversation: '1',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '1',
-  from: '573185215524'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573185215524@s.whatsapp.net',
-    fromMe: false,
-    id: '3A8D90BB12EE2912788B',
-    participant: undefined
-  },
-  messageTimestamp: 1746842388,
-  pushName: 'Andres G',
-  broadcast: false,
-  message: Message {
-    conversation: 'Nueva empresa, Bucaramanga, tecnología, idea nueva',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Nueva empresa, Bucaramanga, tecnología, idea nueva',
   from: '573185215524'
 }

@@ -16,18 +16,6 @@ const { menuOptions } = require('../responses/responsesConstants');
  */
 const createWelcomeFlow = (provider, { empresasFlow, solterosAnonimosFlow, historiasFlow, entrevistasFlow } = {}) => {
 
-  // Importar los otros flujos que queremos usar
-  //const createEmpresasFlow = require('./empresasFlow');
-  //const createSolterosAnonimosFlow = require('./solterosAnonimosFlow');
-  //const createHistoriasFlow = require('./historiasFlow');
-  //const createEntrevistasFlow = require('./entrevistasFlow');
-
-  // Crear instancias de los otros flujos
-  //const empresasFlow = createEmpresasFlow(provider);
-  //const solterosAnonimosFlow = createSolterosAnonimosFlow(provider);
-  //const historiasFlow = createHistoriasFlow(provider);
-  //const entrevistasFlow = createEntrevistasFlow(provider);
-
   return addKeyword(['hola','Hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'ola', 'hi', 'hello', 'que tal', 'qué tal', 'que onda','qué onda','buenos días','hi','hello','saludos','menú','menu','info','información','inicio','quiero info','quiero información','necesito info','necesito información'])
     // Primer paso: Enviar el saludo
     .addAction(async (ctx, { flowDynamic, endFlow }) => {

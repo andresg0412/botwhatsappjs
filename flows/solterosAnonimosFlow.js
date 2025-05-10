@@ -1,57 +1,88 @@
 /**
- * Flujo del menú principal
+ * Flujo de empresas
  */
-const { addKeyword, EVENTS } = require('@bot-whatsapp/bot');
-const { getRandomResponse } = require('../utils/messageUtils');
-const { applyRandomDelay } = require('../utils/delay');
-//const { isWorkingHours, getOutOfHoursMessage } = require('../utils/timeUtils');
+const { addKeyword } = require('@bot-whatsapp/bot');
 const antibanUtils = require('../utils/antibanUtils');
+const {
+  saludoSolteros,
+  preguntarInteresadoSoltero,
+  enviarFormularioSoltero,
+} = require('../responses/responsesConstants')
 
 /**
- * Crea el flujo del menú principal
+ * Crea el flujo de empresas
  * @param {Object} provider - Proveedor de WhatsApp
- * @returns {Object} Flujo del menú configurado
+ * @returns {Object} Flujo de empresas configurado
  */
 const createSolterosAnonimosFlow = (provider) => {
-  return addKeyword(['2'])
-    .addAction(async (ctx, { flowDynamic, endFlow }) => {
-      // Verificar si estamos en horario de atención
-      /*if (!isWorkingHours()) {
-        const outOfHoursMessage = getOutOfHoursMessage();
-        
-        // Verificar si es seguro enviar un mensaje (anti-ban)
-        if (!isSafeToSendMessage()) {
-          console.log('No es seguro enviar mensaje, saltando respuesta');
-          return endFlow();
-        }
-        
-        // Registrar mensaje enviado
-        registerMessageSent();
-        
-        // Enviar mensaje fuera de horario con delay aleatorio
-        return await applyRandomDelay(async () => {
-          await flowDynamic(sanitizeMessage(outOfHoursMessage));
-        });
-      }*/
-      
-      // Seleccionar una respuesta aleatoria para el menú
-      //const menuResponse = getRandomResponse(menuResponses);
-      
-      // Verificar si es seguro enviar un mensaje (anti-ban)
-      if (!isSafeToSendMessage()) {
-        console.log('No es seguro enviar mensaje, saltando respuesta');
-        return endFlow();
-      }
-      
-      // Enviar mensaje
-        await applyRandomDelay(async () => {
-          await flowDynamic(antibanUtils.sanitizeMessage('OPCION SOLTEROS'));
-        });
-        
+  // Crear submenús para cada opción
+  const solteroInteresadoSi = addKeyword([])
+    .addAnswer(
+      enviarFormularioSoltero,
+      { delay: 5000 },
+      async (ctx, { flowDynamic, endFlow }) => {
+        const chatId = ctx.from;
+        console.log('Respuesta en submenú servicios:', respuesta);
+
         // Registrar mensaje enviado
         await antibanUtils.registerMessageSent(chatId);
+        //Fin del flujo
         return endFlow();
-    });
+      }
+    );
+
+
+  // Usamos una palabra clave específica para este flujo
+  const solterosFlow = addKeyword([])
+    // Mensaje inicial que siempre se mostrará
+    .addAnswer(
+      saludoSolteros,
+      { delay: 8000 },
+      async (ctx) => {
+        console.log('Entrando al flujo de empresas - Paso 1');
+        const chatId = ctx.from;
+        await antibanUtils.registerMessageSent(chatId);
+      }
+    )
+    // Segundo paso: Mostrar el menú de opciones
+    .addAnswer(
+      preguntarInteresadoSoltero,
+      { capture: true, delay: 13500 },
+      async (ctx, { flowDynamic, gotoFlow, fallBack }) => {
+        try {
+          console.log('Procesando respuesta en el flujo de empresas - Paso 3');
+          const chatId = ctx.from;
+          const userResponse = ctx.body.trim();
+          
+          console.log(`Respuesta del usuario en el menú de empresas: "${userResponse}"`);
+          
+          // Verificar si es seguro enviar un mensaje (anti-ban)
+          if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
+            console.log('No es seguro enviar mensaje de respuesta, saltando');
+            return;
+          }
+          
+          // Navegar al flujo correspondiente según la respuesta
+          if (userResponse.includes('1') || userResponse.includes('si')) {
+            console.log('El cliente esta interesado');
+            return gotoFlow(solteroInteresadoSi);
+          } 
+          else if (userResponse.includes('2') || userResponse.includes('no')) {
+            console.log('El cliente no esta interesado');
+            await flowDynamic("Ok, gracias por tu tiempo. Escribe *hola* cuando necesites algo más.");
+            return endFlow(); // ✅ Termina correctamente el flujo
+          } 
+        } catch (error) {
+          console.error('Error en el flujo de empresas (paso 2):', error);
+          return fallBack();
+        }
+      }
+    );
+  solterosFlow.ref = {};
+  return {
+    solterosFlow,
+    solteroInteresadoSi
+  };
 };
 
 module.exports = createSolterosAnonimosFlow;

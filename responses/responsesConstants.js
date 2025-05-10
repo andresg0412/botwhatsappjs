@@ -42,11 +42,43 @@ const cierreEmpresa = `🙏 Gracias por confiar en nosotros.
 Hemos recibido la información, ahora la analizaremos y en un plazo máximo de 48 horas me comunicaré contigo para revisar las opciones más adecuadas según tus gustos, objetivos y con base en nuestra experiencia en la promoción de negocios y marcas 🧠✨
 `;
 
+const saludoSolteros = `💘 ¡Bienvenido a Soltero Anónimo! 💘
+
+¿Listo para encontrar tu media naranja? 🍊
+
+Por solo $200.000 COP, te presentamos en nuestra cuenta de Instagram de forma creativa y anónima, generando curiosidad y atrayendo posibles matches 💌
+
+¿Qué incluye el servicio?
+✅ Te mostramos al mundo sin revelar tu identidad
+✅ Aumentás tu visibilidad en una comunidad 100% dedicada a solteros
+✅ Podés conocer a alguien especial de forma original y divertida 😍
+¿Te animás a presentarte? 🔥
+`;
+
+const preguntarInteresadoSoltero = `Escribinos y te contamos cómo hacerlo paso a paso 💬
+
+Por favor, elige una opción para continuar:
+
+1️⃣ Estoy muy animado
+2️⃣ No me interesaría el servicio
+`;
+
+const enviarFormularioSoltero = `Super, me encanta!
+Te voy a dejar acá un formulario para conocerte mejor:
+
+🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view
+
+Por favor diligencialo y enviamelo, y en un plazo máximo de 48 horas lo estaré revisando y me contactaré contigo para darte los siguientes pasos.
+`;
+
 module.exports = {
     menuOptions,
     saludoEmpresas,
     serviciosEmpresas,
     preguntaInteresado,
     pedirInfoEmpresa,
-    cierreEmpresa
+    cierreEmpresa,
+    saludoSolteros,
+    preguntarInteresadoSoltero,
+    enviarFormularioSoltero
 };

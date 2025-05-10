@@ -14,9 +14,9 @@ const { menuOptions } = require('../responses/responsesConstants');
  * @param {Object} provider - Proveedor de WhatsApp
  * @returns {Object} Flujo de bienvenida configurado
  */
-const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow, entrevistaFlow } = {}) => {
+const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow, entrevistaFlow, unknownFlow } = {}) => {
 
-  return addKeyword(['hola','Hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'ola', 'hi', 'hello', 'que tal', 'qué tal', 'que onda','qué onda','buenos días','hi','hello','saludos','menú','menu','info','información','inicio','quiero info','quiero información','necesito info','necesito información'])
+  return addKeyword(['hola','Hola', 'holi', 'Holi', 'holis', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'ola', 'hi', 'hello', 'que tal', 'qué tal', 'que onda','qué onda','buenos días','hi','hello','saludos','menú','menu','info','información','inicio','quiero info','quiero información','necesito info','necesito información'])
     // Primer paso: Enviar el saludo
     .addAction(async (ctx, { flowDynamic, endFlow }) => {
       try {
@@ -77,7 +77,7 @@ const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow
     .addAnswer(menuOptions,
       { capture: true },
       // Callback para procesar la respuesta
-      async (ctx, { gotoFlow, flowDynamic, fallBack }) => {
+      async (ctx, { gotoFlow, flowDynamic }) => {
         try {
           const chatId = ctx.from;
           const userResponse = ctx.body.toLowerCase().trim();
@@ -91,11 +91,11 @@ const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow
           }
           
           // Navegar al flujo correspondiente según la respuesta
-          if (userResponse.includes('1') || userResponse.includes('empresa')) {
+          if (userResponse.includes('1') || userResponse.includes('empresa') || userResponse.includes('pauta') || userResponse.includes('empresas')) {
             console.log('Navegando al flujo de empresas');
             if (empresasFlow) return gotoFlow(empresasFlow);
           } 
-          else if (userResponse.includes('2') || userResponse.includes('solter')) {
+          else if (userResponse.includes('2') || userResponse.includes('solter') || userResponse.includes('solteros')) {
             console.log('Navegando al flujo de solteros anónimos');
             if (solterosFlow) return gotoFlow(solterosFlow);
           } 
@@ -108,18 +108,13 @@ const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow
             if (entrevistaFlow) return gotoFlow(entrevistaFlow);
           } 
           else {
-            // Respuesta no reconocida
-            await applyRandomDelay(async () => {
-              await flowDynamic(antibanUtils.sanitizeMessage(
-                'No he entendido tu respuesta. Por favor, selecciona una opción válida del menú (1-4).'
-              ));
-            });
-            await antibanUtils.registerMessageSent(chatId);
-            return fallBack();
+            // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
+            console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
+            if (unknownFlow) return gotoFlow(unknownFlow);
           }
         } catch (error) {
           console.error('Error en el flujo de bienvenida (procesamiento de respuesta):', error);
-          return fallBack();
+          return;
         }
       }
     );

@@ -14,7 +14,7 @@ const {
  * @param {Object} provider - Proveedor de WhatsApp
  * @returns {Object} Flujo de empresas configurado
  */
-const createSolterosAnonimosFlow = (provider) => {
+const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const solteroInteresadoSi = addKeyword([])
     .addAnswer(
@@ -70,10 +70,15 @@ const createSolterosAnonimosFlow = (provider) => {
             console.log('El cliente no esta interesado');
             await flowDynamic("Ok, gracias por tu tiempo. Escribe *hola* cuando necesites algo más.");
             return endFlow(); // ✅ Termina correctamente el flujo
-          } 
+          }
+          else {
+            // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
+            console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
+            if (unknownFlow) return gotoFlow(unknownFlow);
+          }
         } catch (error) {
           console.error('Error en el flujo de soltero (paso 2):', error);
-          return fallBack();
+          return endFlow();
         }
       }
     );

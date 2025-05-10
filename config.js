@@ -7,7 +7,7 @@ const WORKING_HOURS = {
     start: 8, // 8:00 AM
     end: 23,  // 8:00 PM
     timezone: 'America/Mexico_City', // Ajusta a tu zona horaria
-    workDays: [1, 2, 3, 4, 5], // Lunes a Viernes (0 = Domingo, 6 = Sábado)
+    workDays: [1, 2, 3, 4, 5, 6], // Lunes a Viernes (0 = Domingo, 6 = Sábado)
   };
   
   // Configuración de delays para respuestas

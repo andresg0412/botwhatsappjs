@@ -1,0 +1,104 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573185215524@s.whatsapp.net',
+    fromMe: false,
+    id: '3A058A701EC3C2E8265E',
+    participant: undefined
+  },
+  messageTimestamp: 1746846141,
+  pushName: 'Andres G',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '573185215524'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_055f420c-842d-4684-82c2-2c3cb6a89a0f',
+  keyword: 'key_2fa4aea7-4c26-4d82-b434-108a237e0999',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '23d611f92b645bd5b337cff309f0592a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a8b0f22c-5509-412a-87b5-4bef13d9da59',
+  keyword: 'ans_055f420c-842d-4684-82c2-2c3cb6a89a0f',
+  answer: 'Por favor, elige la opción que más te interese 👇\n' +
+    '\n' +
+    '*1*. Pauta Empresas\n' +
+    '*2*. Presentando solteros (con o sin foto)\n' +
+    '*3*. Historias\n' +
+    '*4*. Entrevista Presencial\n',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'add546df07662ec15e8c1693c0a99cb6'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573185215524@s.whatsapp.net',
+    fromMe: false,
+    id: '3AF0A15C217B0CF34BDD',
+    participant: undefined
+  },
+  messageTimestamp: 1746846158,
+  pushName: 'Andres G',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  from: '573185215524'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573185215524@s.whatsapp.net',
+    fromMe: false,
+    id: '3A658F319A5205452EAD',
+    participant: undefined
+  },
+  messageTimestamp: 1746846189,
+  pushName: 'Andres G',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '573185215524'
+}

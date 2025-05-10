@@ -5,7 +5,7 @@
 // Horario de funcionamiento (24h)
 const WORKING_HOURS = {
     start: 8, // 8:00 AM
-    end: 22,  // 8:00 PM
+    end: 23,  // 8:00 PM
     timezone: 'America/Mexico_City', // Ajusta a tu zona horaria
     workDays: [1, 2, 3, 4, 5], // Lunes a Viernes (0 = Domingo, 6 = Sábado)
   };

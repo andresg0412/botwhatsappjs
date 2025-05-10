@@ -14,7 +14,7 @@ const { menuOptions } = require('../responses/responsesConstants');
  * @param {Object} provider - Proveedor de WhatsApp
  * @returns {Object} Flujo de bienvenida configurado
  */
-const createWelcomeFlow = (provider, { empresasFlow, solterosAnonimosFlow, historiasFlow, entrevistasFlow } = {}) => {
+const createWelcomeFlow = (provider, { empresasFlow, solterosFlow, historiasFlow, entrevistaFlow } = {}) => {
 
   return addKeyword(['hola','Hola', 'buenos dias', 'buenas tardes', 'buenas noches', 'buenas', 'hey', 'ola', 'hi', 'hello', 'que tal', 'qué tal', 'que onda','qué onda','buenos días','hi','hello','saludos','menú','menu','info','información','inicio','quiero info','quiero información','necesito info','necesito información'])
     // Primer paso: Enviar el saludo
@@ -97,7 +97,7 @@ const createWelcomeFlow = (provider, { empresasFlow, solterosAnonimosFlow, histo
           } 
           else if (userResponse.includes('2') || userResponse.includes('solter')) {
             console.log('Navegando al flujo de solteros anónimos');
-            if (solterosAnonimosFlow) return gotoFlow(solterosAnonimosFlow);
+            if (solterosFlow) return gotoFlow(solterosFlow);
           } 
           else if (userResponse.includes('3') || userResponse.includes('historia')) {
             console.log('Navegando al flujo de historias');
@@ -105,7 +105,7 @@ const createWelcomeFlow = (provider, { empresasFlow, solterosAnonimosFlow, histo
           } 
           else if (userResponse.includes('4') || userResponse.includes('entrevista')) {
             console.log('Navegando al flujo de entrevistas');
-            if (entrevistasFlow) return gotoFlow(entrevistasFlow);
+            if (entrevistaFlow) return gotoFlow(entrevistaFlow);
           } 
           else {
             // Respuesta no reconocida

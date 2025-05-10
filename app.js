@@ -139,22 +139,24 @@ const main = async () => {
   const { empresasFlow, empresaInteresadoSi } = empresasFlows;
   const solterosAnonimosFlows = createSolterosAnonimosFlow(adapterProvider);
   const { solterosFlow, solteroInteresadoSi} = solterosAnonimosFlows;
-  const historiasFlow = createHistoriasFlow(adapterProvider);
-  const entrevistasFlow = createEntrevistasFlow(adapterProvider);
+  const historiasFlows = createHistoriasFlow(adapterProvider);
+  const { historiasFlow, historiasInteresadoSi } = historiasFlows;
+  const entrevistasFlows = createEntrevistasFlow(adapterProvider);
+  const { entrevistaFlow, entrevistaInteresadoSi } = entrevistasFlows;
 
   // Crear welcomeFlow con referencias a los otros flujos
   const welcomeFlow = createWelcomeFlow(adapterProvider, {
     empresasFlow,
     solterosFlow,
     historiasFlow,
-    entrevistasFlow
+    entrevistaFlow
   });
 
   // Actualizar las referencias en los otros flujos
   empresasFlow.ref = { welcomeFlow };
   solterosFlow.ref = { welcomeFlow };
   historiasFlow.ref = { welcomeFlow };
-  entrevistasFlow.ref = { welcomeFlow };
+  entrevistaFlow.ref = { welcomeFlow };
   
   // Crear el bot con todos los flujos
   const bot = await createBot({
@@ -168,7 +170,9 @@ const main = async () => {
       solterosFlow,
       solteroInteresadoSi,
       historiasFlow,
-      entrevistasFlow,
+      historiasInteresadoSi,
+      entrevistaFlow,
+      entrevistaInteresadoSi,
       //mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
     ]),
     provider: adapterProvider,

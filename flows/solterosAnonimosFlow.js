@@ -20,9 +20,8 @@ const createSolterosAnonimosFlow = (provider) => {
     .addAnswer(
       enviarFormularioSoltero,
       { delay: 5000 },
-      async (ctx, { flowDynamic, endFlow }) => {
+      async (ctx, { endFlow }) => {
         const chatId = ctx.from;
-        console.log('Respuesta en submenú servicios:', respuesta);
 
         // Registrar mensaje enviado
         await antibanUtils.registerMessageSent(chatId);
@@ -39,7 +38,7 @@ const createSolterosAnonimosFlow = (provider) => {
       saludoSolteros,
       { delay: 8000 },
       async (ctx) => {
-        console.log('Entrando al flujo de empresas - Paso 1');
+        console.log('Entrando al flujo de solteros - Paso 1');
         const chatId = ctx.from;
         await antibanUtils.registerMessageSent(chatId);
       }
@@ -48,13 +47,13 @@ const createSolterosAnonimosFlow = (provider) => {
     .addAnswer(
       preguntarInteresadoSoltero,
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack }) => {
+      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
         try {
-          console.log('Procesando respuesta en el flujo de empresas - Paso 3');
+          console.log('Procesando respuesta en el flujo de solteros - Paso 2');
           const chatId = ctx.from;
           const userResponse = ctx.body.trim();
           
-          console.log(`Respuesta del usuario en el menú de empresas: "${userResponse}"`);
+          console.log(`Respuesta del usuario en el menú de solteros: "${userResponse}"`);
           
           // Verificar si es seguro enviar un mensaje (anti-ban)
           if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
@@ -73,7 +72,7 @@ const createSolterosAnonimosFlow = (provider) => {
             return endFlow(); // ✅ Termina correctamente el flujo
           } 
         } catch (error) {
-          console.error('Error en el flujo de empresas (paso 2):', error);
+          console.error('Error en el flujo de soltero (paso 2):', error);
           return fallBack();
         }
       }

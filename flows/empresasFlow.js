@@ -71,7 +71,7 @@ const createEmpresasFlow = (provider) => {
     .addAnswer(
       preguntaInteresado,
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack }) => {
+      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de empresas - Paso 3');
           const chatId = ctx.from;

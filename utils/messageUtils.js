@@ -72,9 +72,19 @@ const getRandomResponse = (responses) => {
   const formatMessageWithName = (message, name) => {
     return message.replace('{name}', name || 'amigo');
   };
+
+  // Nueva función para crear generadores de mensajes aleatorios (devuelve una función)
+  const getRandomMessageForFlow = (messages) => {
+    // Devuelve una función que genera un mensaje aleatorio cada vez que se llama
+    return () => {
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      return messages[randomIndex];
+    };
+  };
   
   module.exports = {
     getRandomResponse,
     detectIntent,
-    formatMessageWithName
+    formatMessageWithName,
+    getRandomMessageForFlow
   };

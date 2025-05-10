@@ -7,7 +7,12 @@ const {
   saludoSolteros,
   preguntarInteresadoSoltero,
   enviarFormularioSoltero,
-} = require('../responses/responsesConstants')
+} = require('../responses/responsesConstants');
+const {
+  saludoSolterosRandom,
+  preguntarIntereadoSolterosRandom,
+  enviarFormularioSolterosRandom
+} = require('../responses/responsesSolteros');
 
 /**
  * Crea el flujo de empresas
@@ -18,7 +23,7 @@ const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const solteroInteresadoSi = addKeyword([])
     .addAnswer(
-      enviarFormularioSoltero,
+      enviarFormularioSolterosRandom(),
       { delay: 5000 },
       async (ctx, { endFlow }) => {
         const chatId = ctx.from;
@@ -35,7 +40,7 @@ const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
   const solterosFlow = addKeyword([])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
-      saludoSolteros,
+      saludoSolterosRandom(),
       { delay: 8000 },
       async (ctx) => {
         console.log('Entrando al flujo de solteros - Paso 1');
@@ -45,9 +50,9 @@ const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
     )
     // Segundo paso: Mostrar el menú de opciones
     .addAnswer(
-      preguntarInteresadoSoltero,
+      preguntarIntereadoSolterosRandom(),
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
+      async (ctx, { flowDynamic, gotoFlow, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de solteros - Paso 2');
           const chatId = ctx.from;

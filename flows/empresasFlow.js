@@ -11,7 +11,14 @@ const {
   preguntaInteresado,
   pedirInfoEmpresa,
   cierreEmpresa
-} = require('../responses/responsesConstants')
+} = require('../responses/responsesConstants');
+const {
+  saludoEmpresasRandom,
+  serviciosEmpresasRandom,
+  preguntaInteresadoEmpresasRandom,
+  pedirInfoEmpresasRandom,
+  cierreEmpresasRandom,
+} = require('../responses/responsesEmpresas');
 
 /**
  * Crea el flujo de empresas
@@ -22,7 +29,7 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const empresaInteresadoSi = addKeyword([])
     .addAnswer(
-      pedirInfoEmpresa,
+      pedirInfoEmpresasRandom(),
       { capture: true, delay: 5000 },
       async (ctx, { flowDynamic, endFlow }) => {
         const chatId = ctx.from;
@@ -35,7 +42,7 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
         //Responder diciendo que muchas gracias por la informacion, revisaremos la informacion y nos podremos en contacto contigo directamente en las proximas 48 horas
         await applyRandomDelay(async () => {
           await flowDynamic(antibanUtils.sanitizeMessage(
-            cierreEmpresa
+            cierreEmpresasRandom()
           ));
         });
         // Registrar mensaje enviado
@@ -50,7 +57,7 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
   const empresasFlow = addKeyword([])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
-      saludoEmpresas,
+      saludoEmpresasRandom(),
       { delay: 8000 },
       async (ctx) => {
         console.log('Entrando al flujo de empresas - Paso 1');
@@ -59,7 +66,7 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
       }
     )
     .addAnswer(
-      serviciosEmpresas,
+      serviciosEmpresasRandom(),
       { delay: 11000 },
       async (ctx) => {
         console.log('Entrando al flujo de empresas - Paso 2');
@@ -69,9 +76,9 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
     )
     // Segundo paso: Mostrar el menú de opciones
     .addAnswer(
-      preguntaInteresado,
+      preguntaInteresadoEmpresasRandom(),
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
+      async (ctx, { flowDynamic, gotoFlow, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de empresas - Paso 3');
           const chatId = ctx.from;

@@ -1,32 +1,11 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573177999872@s.whatsapp.net',
-    fromMe: false,
-    id: '3A33F5C59BAB8000132B',
-    participant: undefined
-  },
-  messageTimestamp: 1746899857,
-  pushName: 'Karol Quintero',
-  broadcast: false,
-  message: Message {
-    conversation: 'hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'hola',
-  from: '573177999872'
-}
-[handleMsg]:  {
-  key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3A2781B893FD91173B2C',
+    id: '3A2214682D86AEECE6E7',
     participant: undefined
   },
-  messageTimestamp: 1746899864,
+  messageTimestamp: 1746910612,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
@@ -41,8 +20,8 @@
   from: '573185215524'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
-  keyword: 'key_97c2f160-0cca-44b3-a46f-c4e63044fb8d',
+  ref: 'ans_2e710f45-3e71-47a5-bdfd-5442c45ea138',
+  keyword: 'key_b0daf95b-f1f7-4855-8fdf-206a79f975db',
   answer: '__call_action__',
   options: {
     media: null,
@@ -56,17 +35,17 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '76cf7e27171bcee8f9d05c1b8931c083'
+  refSerialize: '103f365bd540a2af3a1b5f3066287d84'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1c5d4791-a8f8-4106-b314-6cf1be96e388',
-  keyword: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
+  ref: 'ans_7cff7964-2a1d-460c-a822-a3ce0b0ca7aa',
+  keyword: 'ans_2e710f45-3e71-47a5-bdfd-5442c45ea138',
   answer: 'Por favor, elige la opción que más te interese 👇\n' +
     '\n' +
-    '*1*. Pauta Empresas\n' +
-    '*2*. Presentando solteros (con o sin foto)\n' +
-    '*3*. Historias\n' +
-    '*4*. Entrevista Presencial\n',
+    '*1*. 🏢 Pauta *Empresas*\n' +
+    '*2*. 💘 Presentando *Solteros* (con o sin foto)\n' +
+    '*3*. 📲 *Historias*\n' +
+    '*4*. 🎥 *Entrevista* Presencial\n',
   options: {
     media: null,
     buttons: [],
@@ -79,78 +58,37 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'e0a641d8a35302df2706f2b6d55f6f54'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
-  keyword: 'key_97c2f160-0cca-44b3-a46f-c4e63044fb8d',
-  answer: '__call_action__',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '76cf7e27171bcee8f9d05c1b8931c083'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1c5d4791-a8f8-4106-b314-6cf1be96e388',
-  keyword: 'ans_d14b0039-c52d-45a7-bba6-f7a8b6d7aaa5',
-  answer: 'Por favor, elige la opción que más te interese 👇\n' +
-    '\n' +
-    '*1*. Pauta Empresas\n' +
-    '*2*. Presentando solteros (con o sin foto)\n' +
-    '*3*. Historias\n' +
-    '*4*. Entrevista Presencial\n',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: 'e0a641d8a35302df2706f2b6d55f6f54'
+  refSerialize: 'c0f1d389b56fc427b601ed0b56673147'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573177999872@s.whatsapp.net',
+    remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3AD72D18B70F0C8F94FB',
+    id: '3A4746A86BD62108833B',
     participant: undefined
   },
-  messageTimestamp: 1746899879,
-  pushName: 'Karol Quintero',
+  messageTimestamp: 1746910624,
+  pushName: 'Andres G',
   broadcast: false,
   message: Message {
-    conversation: '2',
+    conversation: '3',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: '2',
-  from: '573177999872'
+  body: '3',
+  from: '573185215524'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3AE0E35BF163B55380F7',
+    id: '3A87021D3237FAE4F4DA',
     participant: undefined
   },
-  messageTimestamp: 1746899886,
+  messageTimestamp: 1746910669,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {

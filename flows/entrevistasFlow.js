@@ -7,7 +7,12 @@ const {
   saludoSolteros,
   preguntarInteresadoSoltero,
   enviarFormularioSoltero,
-} = require('../responses/responsesConstants')
+} = require('../responses/responsesConstants');
+const {
+  saludoEntrevistaRandom,
+  preguntarIntereadoEntrevistasRandom,
+  enviarFormularioEntrevistasRandom
+} = require('../responses/responsesEntrevistas');
 
 /**
  * Crea el flujo de empresas
@@ -18,7 +23,7 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const entrevistaInteresadoSi = addKeyword([])
     .addAnswer(
-      enviarFormularioSoltero,
+      enviarFormularioEntrevistasRandom(),
       { delay: 5000 },
       async (ctx, { endFlow }) => {
         const chatId = ctx.from;
@@ -35,7 +40,7 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
   const entrevistaFlow = addKeyword([])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
-      saludoSolteros,
+      saludoEntrevistaRandom(),
       { delay: 8000 },
       async (ctx) => {
         console.log('Entrando al flujo de solteros - Paso 1');
@@ -45,9 +50,9 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
     )
     // Segundo paso: Mostrar el menú de opciones
     .addAnswer(
-      preguntarInteresadoSoltero,
+      preguntarIntereadoEntrevistasRandom(),
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
+      async (ctx, { flowDynamic, gotoFlow, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de solteros - Paso 2');
           const chatId = ctx.from;
@@ -64,7 +69,7 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
           // Navegar al flujo correspondiente según la respuesta
           if (userResponse.includes('1') || userResponse.includes('si')) {
             console.log('El cliente esta interesado');
-            return gotoFlow(solteroInteresadoSi);
+            return gotoFlow(entrevistaInteresadoSi);
           } 
           else if (userResponse.includes('2') || userResponse.includes('no')) {
             console.log('El cliente no esta interesado');

@@ -4,10 +4,10 @@
 const { addKeyword } = require('@bot-whatsapp/bot');
 const antibanUtils = require('../utils/antibanUtils');
 const {
-  saludoSolteros,
-  preguntarInteresadoSoltero,
-  enviarFormularioSoltero,
-} = require('../responses/responsesConstants')
+  saludoHistoriasRandom,
+  preguntarIntereadoHistoriasRandom,
+  enviarFormularioHistoriasRandom
+} = require('../responses/responsesHistorias');
 
 /**
  * Crea el flujo de empresas
@@ -18,7 +18,7 @@ const createHistoriasFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
   const historiasInteresadoSi = addKeyword([])
     .addAnswer(
-      enviarFormularioSoltero,
+      enviarFormularioHistoriasRandom(),
       { delay: 5000 },
       async (ctx, { endFlow }) => {
         const chatId = ctx.from;
@@ -35,7 +35,7 @@ const createHistoriasFlow = (provider, { unknownFlow } = {}) => {
   const historiasFlow = addKeyword([])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
-      saludoSolteros,
+      saludoHistoriasRandom(),
       { delay: 8000 },
       async (ctx) => {
         console.log('Entrando al flujo de solteros - Paso 1');
@@ -45,9 +45,9 @@ const createHistoriasFlow = (provider, { unknownFlow } = {}) => {
     )
     // Segundo paso: Mostrar el menú de opciones
     .addAnswer(
-      preguntarInteresadoSoltero,
+      preguntarIntereadoHistoriasRandom(),
       { capture: true, delay: 13500 },
-      async (ctx, { flowDynamic, gotoFlow, fallBack, endFlow }) => {
+      async (ctx, { flowDynamic, gotoFlow, endFlow }) => {
         try {
           console.log('Procesando respuesta en el flujo de solteros - Paso 2');
           const chatId = ctx.from;
@@ -64,7 +64,7 @@ const createHistoriasFlow = (provider, { unknownFlow } = {}) => {
           // Navegar al flujo correspondiente según la respuesta
           if (userResponse.includes('1') || userResponse.includes('si')) {
             console.log('El cliente esta interesado');
-            return gotoFlow(solteroInteresadoSi);
+            return gotoFlow(historiasInteresadoSi);
           } 
           else if (userResponse.includes('2') || userResponse.includes('no')) {
             console.log('El cliente no esta interesado');

@@ -137,21 +137,22 @@ const main = async () => {
   const newsFlow = createNewsFlow(adapterProvider);
   const empresasFlows = createEmpresasFlow(adapterProvider);
   const { empresasFlow, empresaInteresadoSi } = empresasFlows;
-  const solterosAnonimosFlow = createSolterosAnonimosFlow(adapterProvider);
+  const solterosAnonimosFlows = createSolterosAnonimosFlow(adapterProvider);
+  const { solterosFlow, solteroInteresadoSi} = solterosAnonimosFlows;
   const historiasFlow = createHistoriasFlow(adapterProvider);
   const entrevistasFlow = createEntrevistasFlow(adapterProvider);
 
   // Crear welcomeFlow con referencias a los otros flujos
   const welcomeFlow = createWelcomeFlow(adapterProvider, {
     empresasFlow,
-    solterosAnonimosFlow,
+    solterosFlow,
     historiasFlow,
     entrevistasFlow
   });
 
   // Actualizar las referencias en los otros flujos
   empresasFlow.ref = { welcomeFlow };
-  solterosAnonimosFlow.ref = { welcomeFlow };
+  solterosFlow.ref = { welcomeFlow };
   historiasFlow.ref = { welcomeFlow };
   entrevistasFlow.ref = { welcomeFlow };
   
@@ -164,7 +165,8 @@ const main = async () => {
       newsFlow,
       empresasFlow,
       empresaInteresadoSi,
-      solterosAnonimosFlow,
+      solterosFlow,
+      solteroInteresadoSi,
       historiasFlow,
       entrevistasFlow,
       //mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos

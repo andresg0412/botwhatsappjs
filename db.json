@@ -1,15 +1,15 @@
 [
   {
-    "ref": "7cb8c8d9-b361-406f-99af-4f7260214d14",
-    "keyword": "9e50b68492d311d749cd23a9e077b171",
-    "answer": "Hola",
+    "ref": "f44b8d23-afed-47c3-875c-ce2374c0f914",
+    "keyword": "438249205c82141f686dd267bed6d3d3",
+    "answer": "hola",
     "options": {},
-    "from": "573185215524",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+    "from": "573209123058",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
   },
   {
-    "ref": "ans_2e710f45-3e71-47a5-bdfd-5442c45ea138",
-    "keyword": "key_b0daf95b-f1f7-4855-8fdf-206a79f975db",
+    "ref": "ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465",
+    "keyword": "key_e9d141ff-8dc5-4795-924b-10c01ebf2062",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -23,25 +23,25 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "103f365bd540a2af3a1b5f3066287d84",
-    "from": "573185215524"
+    "refSerialize": "6917ae1a1d6a456630d4854e4a3c2ec3",
+    "from": "573209123058"
   },
   {
-    "ref": "ac5e6aa7-f5bf-4a6e-bdb6-b3c18930fc1c",
+    "ref": "53d2e34f-8fab-41da-8702-ef9c1e589745",
     "keyword": null,
-    "answer": "¡Hey Andres G! Soy Conny, la creadora de Solteros y Parceros 💘\n¡Gracias por contactarnos! 🙌\nConectamos a solteros por el mundo vía Instagram y TikTok 🌍\nY además, ofrecemos espacios para que las marcas se luzcan ✨",
+    "answer": "¡Hey Conny! Soy Conny, la creadora de Solteros y Parceros 💘\n¡Gracias por contactarnos! 🙌\nConectamos a solteros por el mundo vía Instagram y TikTok 🌍\nY además, ofrecemos espacios para que las marcas se luzcan ✨",
     "options": {
       "media": null,
       "buttons": [],
       "capture": false,
       "delay": 0
     },
-    "from": "573185215524",
-    "refSerialize": "23610a982abe28b2b9d44f59baf16bcd"
+    "from": "573209123058",
+    "refSerialize": "123683029eab5ab08cbbdd60494cc4f6"
   },
   {
-    "ref": "ans_7cff7964-2a1d-460c-a822-a3ce0b0ca7aa",
-    "keyword": "ans_2e710f45-3e71-47a5-bdfd-5442c45ea138",
+    "ref": "ans_0e9ac106-ce63-43ff-b130-aa852f491cd0",
+    "keyword": "ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. 🏢 Pauta *Empresas*\n*2*. 💘 Presentando *Solteros* (con o sin foto)\n*3*. 📲 *Historias*\n*4*. 🎥 *Entrevista* Presencial\n",
     "options": {
       "media": null,
@@ -55,21 +55,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "c0f1d389b56fc427b601ed0b56673147",
-    "from": "573185215524"
+    "refSerialize": "9a1b05b2f1703d97be0165729e83ef33",
+    "from": "573209123058"
   },
   {
-    "ref": "d5674673-098b-4fea-9e20-220119a2a4e2",
-    "keyword": "c0f1d389b56fc427b601ed0b56673147",
+    "ref": "e4ebc054-5ddf-4c1a-8bdd-63b032ee268d",
+    "keyword": "9a1b05b2f1703d97be0165729e83ef33",
     "answer": "3",
     "options": {},
-    "from": "573185215524",
+    "from": "573209123058",
     "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
   },
   {
-    "ref": "ans_861d6726-bfaa-4188-b527-bc48de2c3ecb",
-    "keyword": "key_b85ccf1a-c05a-4511-abfb-a4ad475111f5",
-    "answer": "💘 ¡Hola! Bienvenido a Solteros con Historia 💘\n\nPor solo *$100.000 COP*, creamos una historia personalizada en Instagram para que destaques y conectes con *nuevas personas* 🌟\n\nIncluye:\n✅ Historia creativa\n✅ Más visibilidad\n✅ Conexiones auténticas 💬\n\n👉 ¿Listo para mostrarte al mundo? 🚀\n",
+    "ref": "ans_d04986f8-e09c-48a0-b898-bec2cc17bdd1",
+    "keyword": "key_ddf4fd84-676d-4d3a-ac02-446b9b1e511f",
+    "answer": "💘 ¡Llegaste a Solteros con Historia en Instagram!\n\nPor solo *$100.000 COP*, te destacamos en nuestras historias de Instagram para que más personas te descubran 📲\n\nIncluye:\n✅ Presentación creativa\n✅ Visibilidad real\n✅ ¡Conexiones inesperadas! 😍\n\n¿Te animás a hacerlo realidad? 🚀\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -82,13 +82,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "c2f1ce83e8766bae84e40beff441d1f2",
-    "from": "573185215524"
+    "refSerialize": "f2874fd5cd38f910ee834b3af0eb7fac",
+    "from": "573209123058"
   },
   {
-    "ref": "ans_81fcf3d0-4b45-442b-82e1-170b7541bc62",
-    "keyword": "ans_861d6726-bfaa-4188-b527-bc48de2c3ecb",
-    "answer": "📲 Te contamos cómo funciona todo, paso a paso. ¡Estamos para ayudarte!\n\nElegí una opción para avanzar:\n1️⃣ Sí, me emociona esta idea\n2️⃣ No estoy interesado en el servicio\n",
+    "ref": "ans_b6f59d07-1425-4a7d-9087-2cc4bbaeafdc",
+    "keyword": "ans_d04986f8-e09c-48a0-b898-bec2cc17bdd1",
+    "answer": "💡 Si querés saber cómo funciona, te guiamos paso a paso con mucho gusto.\n\nPor favor respondé con el número correspondiente:\n1️⃣ ¡Sí, quiero saber más!\n2️⃣ No me interesa por ahora\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -101,21 +101,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "64b07526fea14efa5a1e659bf5abfb97",
-    "from": "573185215524"
+    "refSerialize": "7911c500a5746e25a858e2b3bd287558",
+    "from": "573209123058"
   },
   {
-    "ref": "4a8efe4c-8bd2-492b-8684-924d2cb91cb2",
-    "keyword": "64b07526fea14efa5a1e659bf5abfb97",
+    "ref": "ab788a99-ef82-4bab-8985-ebbfc14b8efa",
+    "keyword": "7911c500a5746e25a858e2b3bd287558",
     "answer": "1",
     "options": {},
-    "from": "573185215524",
+    "from": "573209123058",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_e05b4c58-6ff1-4b8e-b16e-b2ae11261299",
-    "keyword": "key_6976fecd-3648-4a12-b3f5-ac888a5b59dd",
-    "answer": "💖 ¡Genial! Me alegra que te animes\nDejame por acá este formulario para conocerte mejor:\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n\nCuando lo tengas listo, enviámelo. En un máximo de 48 horas lo revisaré y te contactaré para avanzar 🚀📝\n",
+    "ref": "ans_80cf43fb-74ff-4cdc-b4ea-9b4d24870bca",
+    "keyword": "key_4ab65f87-0d68-4601-a301-d352e5eaf161",
+    "answer": "🙌 ¡Qué emoción!\nTe comparto este formulario para saber un poquito más de vos:\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n\nApenas lo completes, me lo enviás. Lo revisaré en un plazo de 48 horas y te escribiré con los próximos pasos 💬✨\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -128,7 +128,66 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "1d652e87431856e32f270869a054a906",
-    "from": "573185215524"
+    "refSerialize": "f38ad6f5d92a1045ee3b9cbe077f5270",
+    "from": "573209123058"
+  },
+  {
+    "ref": "b839d055-0e90-4061-9497-66031127fa2a",
+    "keyword": "f38ad6f5d92a1045ee3b9cbe077f5270",
+    "answer": "hola",
+    "options": {},
+    "from": "573209123058",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
+  },
+  {
+    "ref": "ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465",
+    "keyword": "key_e9d141ff-8dc5-4795-924b-10c01ebf2062",
+    "answer": "__call_action__",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "6917ae1a1d6a456630d4854e4a3c2ec3",
+    "from": "573209123058"
+  },
+  {
+    "ref": "72776ccc-4cb2-4d41-a897-df3f553d23d8",
+    "keyword": null,
+    "answer": "¡Hola Conny! Soy Conny, fundadora de Solteros y Parceros 💘\n¡Qué bueno tenerte por acá! 🙌\nEn nuestras redes como Instagram y TikTok conectamos corazones solteros 🌍\nY también ayudamos a marcas a mostrarse en grande 🚀",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573209123058",
+    "refSerialize": "175a26f6183508b4c798926167529df4"
+  },
+  {
+    "ref": "ans_0e9ac106-ce63-43ff-b130-aa852f491cd0",
+    "keyword": "ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465",
+    "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. 🏢 Pauta *Empresas*\n*2*. 💘 Presentando *Solteros* (con o sin foto)\n*3*. 📲 *Historias*\n*4*. 🎥 *Entrevista* Presencial\n",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": true,
+      "child": null,
+      "delay": 0,
+      "idle": null,
+      "ref": null,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9a1b05b2f1703d97be0165729e83ef33",
+    "from": "573209123058"
   }
 ]

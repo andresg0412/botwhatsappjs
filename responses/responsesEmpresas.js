@@ -60,62 +60,68 @@ const saludoEmpresasRandom = getRandomMessageForFlow(saludoEmpresas);
 
 const serviciosEmpresas1 = `💰 Estas son nuestras tarifas actuales:
 
-🎬 Video en TikTok — $500
-🎥 Video en Instagram — $450
-📲 2 historias — $200
+🎬 Video en TikTok — $600
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+📲 1 historia — $150
 📲 3 historias — $300
-🎁 Concurso flash (2 historias) — $250
-📦 Combo TikTok + Instagram — $700
+🎁 Historia + Sorteo Flash — $350
+📦 Combo TikTok + Instagram — $900
 `;
 
 const serviciosEmpresas2 = `💸 ¡Aquí tienes nuestras tarifas actualizadas para impulsar tu marca!
 
-🎥 Instagram Reel — $450
-🎬 TikTok — $500
-📦 Combo TikTok + Instagram — $700
-📲 2 historias — $200
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+🎬 Video en TikTok — $600
+📦 Combo TikTok + Instagram — $900
+📲 1 historia — $150
 📲 3 historias — $300
-🎁 Concurso flash (2 historias) — $250
+🎁 Historia + Sorteo Flash — $350
 `;
 
 const serviciosEmpresas3 = `🔥 ¡Estas son nuestras tarifas actuales para que tu marca se luzca con Solteros y Parceros!
 
-🎬 Video en TikTok — $500
-📦 Combo TikTok + Instagram — $700
-🎥 Video en Instagram — $450
-📲 Historias (2) — $200
+🎬 Video en TikTok — $600
+📦 Combo TikTok + Instagram — $900
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+📲 Historia (1) — $150
 📲 Historias (3) — $300
-🎁 Concurso express (2 historias) — $250
+🎁 Historia + Sorteo Flash — $350
 `;
 
 const serviciosEmpresas4 = `✨ ¡Estas son nuestras opciones para que brilles con nosotros!
 
-📱 2 historias — $200
+📱 1 historia — $150
 📱 3 historias — $300
-🎬 TikTok — $500
-🎥 Instagram — $450
-🎁 Concurso flash (2 historias) — $250
-📦 Combo TikTok + Instagram — $700
+🎬 Video en TikTok — $600
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+🎁 Historia + Sorteo Flash — $350
+📦 Combo TikTok + Instagram — $900
 `;
 
 const serviciosEmpresas5 = `📢 ¡Ya puedes elegir cómo quieres que tu marca aparezca en Solteros y Parceros!
 
-🎬 TikTok — $500
-🎥 Instagram — $450
-📲 Historias (2) — $200
+🎬 Video en TikTok — $600
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+📲 Historia (1) — $150
 📲 Historias (3) — $300
-🎁 Concurso relámpago — $250
-📦 Pack TikTok + Instagram — $700
+🎁 Historia + Sorteo Flash — $350
+📦 Pack TikTok + Instagram — $900
 `;
 
 const serviciosEmpresas6 = `🚀 ¡Estas son nuestras tarifas para llevar tu marca al siguiente nivel!
 
-🎥 Video en Instagram — $450
-🎬 Video en TikTok — $500
-📲 2 historias — $200
+🎥 Reel en Instagram (con mención) — $600
+🎥 Reel en Instagram (colaboración) — $700
+🎬 Video en TikTok — $600
+📲 1 historia — $150
 📲 3 historias — $300
-🎁 Concurso flash (2 historias) — $250
-📦 Combo poderoso TikTok + Instagram — $700
+🎁 Historia + Sorteo Flash — $350
+📦 Combo poderoso TikTok + Instagram — $900
 `;
 
 

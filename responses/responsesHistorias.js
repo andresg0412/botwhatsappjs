@@ -4,7 +4,7 @@ const { getRandomMessageForFlow } = require('../utils/messageUtils')
 //SALUDOS HISTORIAS
 
 
-const saludoHistorias1 = `💘 ¡Bienvenido a Solteros con Historia! 💘
+const saludoHistorias1 = `💘 ¡Bienvenido a Solteros con Historia en Instagram! 💘
 
 ¿Quieres destacar de forma diferente? Por solo *$100.000 COP*, te presentamos en nuestras historias de Instagram con un enfoque *creativo* y *personalizado*. 📲
 
@@ -17,7 +17,7 @@ const saludoHistorias1 = `💘 ¡Bienvenido a Solteros con Historia! 💘
 👉 ¿Te animás a compartir tu historia y dejarte descubrir? 🚀
 `;
 
-const saludoHistorias2 = `💘 ¡Hola! Bienvenido a Solteros con Historia 💘
+const saludoHistorias2 = `💘 ¡Hola! Bienvenido a Solteros con Historia en Instagram 💘
 
 Por solo *$100.000 COP*, creamos una historia personalizada en Instagram para que destaques y conectes con *nuevas personas* 🌟
 
@@ -29,7 +29,7 @@ Incluye:
 👉 ¿Listo para mostrarte al mundo? 🚀
 `;
 
-const saludoHistorias3 = `✨ ¡Bienvenid@ a Solteros con Historia!
+const saludoHistorias3 = `✨ ¡Bienvenid@ a Solteros con Historia en Instagram!
 
 Por *$100.000 COP*, te damos visibilidad en nuestras historias de Instagram de una forma *original* y *divertida* 📲
 
@@ -41,7 +41,7 @@ Incluye:
 ¿Te animás? 🔥
 `;
 
-const saludoHistorias4 = `🎉 ¡Qué bueno tenerte en Solteros con Historia!
+const saludoHistorias4 = `🎉 ¡Qué bueno tenerte en Solteros con Historia en Instagram!
 
 ¿Querés que te vean de una forma única? Por *$100.000 COP*, creamos tu historia en Instagram y te ayudamos a conectar 💌
 
@@ -55,7 +55,7 @@ Incluye:
 
 const saludoHistorias5 = `💬 ¿Querés que todos hablen de vos?
 
-Con Solteros con Historia y por solo *$100.000 COP*, te presentamos en Instagram de forma creativa y anónima si lo prefieres.
+Con Solteros con Historia en Instagram y por solo *$100.000 COP*, te presentamos en Instagram de forma creativa y anónima si lo prefieres.
 
 Incluye:
 ✅ Historia original
@@ -65,7 +65,7 @@ Incluye:
 👉 ¿Te animás a empezar? 🔥
 `;
 
-const saludoHistorias6 = `💘 ¡Llegaste a Solteros con Historia!
+const saludoHistorias6 = `💘 ¡Llegaste a Solteros con Historia en Instagram!
 
 Por solo *$100.000 COP*, te destacamos en nuestras historias de Instagram para que más personas te descubran 📲
 
@@ -141,12 +141,11 @@ const preguntarIntereadoHistoriasRandom = getRandomMessageForFlow(preguntarInter
 
 //ENVIAR FORMULARIO HISTORIAS
 
-const enviarFormularioHistorias1 = `🌟 ¡Súper, me encanta!
-Aquí te dejo un formulario para conocerte mejor:
+const enviarFormularioHistorias1 = `🙌 ¡Qué emoción!
+Te comparto este formulario, llénalo con tu datos y en un plazo de 48 horas te escribiré para que puedas participar!💘
 
 🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view
 
-Porfa, completalo y enviámelo cuando termines. En máximo *48 horas* lo reviso y me pongo en contacto para contarte los siguientes pasos 😊📲
 `;
 
 const enviarFormularioHistorias2 = `🙌 ¡Qué emoción!
@@ -154,7 +153,7 @@ Te comparto este formulario para saber un poquito más de vos:
 
 🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view
 
-Apenas lo completes, me lo enviás. Lo revisaré en un plazo de 48 horas y te escribiré con los próximos pasos 💬✨
+Llenalo con tus datos, lo revisaré en un plazo de 48 horas y te escribiré con los próximos pasos 💬✨
 `;
 
 const enviarFormularioHistorias3 = `💖 ¡Genial! Me alegra que te animes

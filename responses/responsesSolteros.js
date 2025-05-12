@@ -33,7 +33,7 @@ Por solo *$200.000 COP*, te presentamos en nuestra cuenta de Instagram de forma 
 
 const saludoSolteros3 = `🎭 ¡Hola! Estás a punto de entrar a Soltero Anónimo 🎭
 
-¿Te animás a dejarte conocer… sin que sepan quién sos? 👀💘
+¿Te animás a dejarte conocer… sin que sepan quién eres? 👀💘
 
 Por solo *$200.000 COP*, hacemos una publicación anónima y creativa en nuestro Instagram para atraer matchs reales y con intención 💌
 

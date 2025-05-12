@@ -1,27 +1,27 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573185215524@s.whatsapp.net',
+    remoteJid: '573209123058@s.whatsapp.net',
     fromMe: false,
-    id: '3A2214682D86AEECE6E7',
+    id: '3EB00FCEBC738B29F4EFC0',
     participant: undefined
   },
-  messageTimestamp: 1746910612,
-  pushName: 'Andres G',
+  messageTimestamp: 1746920623,
+  pushName: 'Conny',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'hola',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Hola',
-  from: '573185215524'
+  body: 'hola',
+  from: '573209123058'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_2e710f45-3e71-47a5-bdfd-5442c45ea138',
-  keyword: 'key_b0daf95b-f1f7-4855-8fdf-206a79f975db',
+  ref: 'ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465',
+  keyword: 'key_e9d141ff-8dc5-4795-924b-10c01ebf2062',
   answer: '__call_action__',
   options: {
     media: null,
@@ -35,11 +35,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '103f365bd540a2af3a1b5f3066287d84'
+  refSerialize: '6917ae1a1d6a456630d4854e4a3c2ec3'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_7cff7964-2a1d-460c-a822-a3ce0b0ca7aa',
-  keyword: 'ans_2e710f45-3e71-47a5-bdfd-5442c45ea138',
+  ref: 'ans_0e9ac106-ce63-43ff-b130-aa852f491cd0',
+  keyword: 'ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465',
   answer: 'Por favor, elige la opción que más te interese 👇\n' +
     '\n' +
     '*1*. 🏢 Pauta *Empresas*\n' +
@@ -58,17 +58,17 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'c0f1d389b56fc427b601ed0b56673147'
+  refSerialize: '9a1b05b2f1703d97be0165729e83ef33'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573185215524@s.whatsapp.net',
+    remoteJid: '573209123058@s.whatsapp.net',
     fromMe: false,
-    id: '3A4746A86BD62108833B',
+    id: '3EB0CCCC4BC8BCD0AC73B5',
     participant: undefined
   },
-  messageTimestamp: 1746910624,
-  pushName: 'Andres G',
+  messageTimestamp: 1746920737,
+  pushName: 'Conny',
   broadcast: false,
   message: Message {
     conversation: '3',
@@ -79,17 +79,17 @@
     }
   },
   body: '3',
-  from: '573185215524'
+  from: '573209123058'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573185215524@s.whatsapp.net',
+    remoteJid: '573209123058@s.whatsapp.net',
     fromMe: false,
-    id: '3A87021D3237FAE4F4DA',
+    id: '3EB02E08339A52B5248520',
     participant: undefined
   },
-  messageTimestamp: 1746910669,
-  pushName: 'Andres G',
+  messageTimestamp: 1746920811,
+  pushName: 'Conny',
   broadcast: false,
   message: Message {
     conversation: '1',
@@ -100,5 +100,67 @@
     }
   },
   body: '1',
-  from: '573185215524'
+  from: '573209123058'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573209123058@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0844C4209CF1BC697A3',
+    participant: undefined
+  },
+  messageTimestamp: 1746922094,
+  pushName: 'Conny',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'hola',
+  from: '573209123058'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465',
+  keyword: 'key_e9d141ff-8dc5-4795-924b-10c01ebf2062',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '6917ae1a1d6a456630d4854e4a3c2ec3'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_0e9ac106-ce63-43ff-b130-aa852f491cd0',
+  keyword: 'ans_6d2d2b3e-2289-447f-894d-b01bcbaf0465',
+  answer: 'Por favor, elige la opción que más te interese 👇\n' +
+    '\n' +
+    '*1*. 🏢 Pauta *Empresas*\n' +
+    '*2*. 💘 Presentando *Solteros* (con o sin foto)\n' +
+    '*3*. 📲 *Historias*\n' +
+    '*4*. 🎥 *Entrevista* Presencial\n',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '9a1b05b2f1703d97be0165729e83ef33'
 }

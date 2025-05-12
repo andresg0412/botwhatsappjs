@@ -1,9 +1,12 @@
 const menuOptions = `Por favor, elige la opción que más te interese 👇
 
-*1*. 🏢 Pauta *Empresas*
+*1*. 🏢 Pauta *Empresas* (Promociona tu Negocio)
+
 *2*. 💘 Presentando *Solteros* (con o sin foto)
-*3*. 📲 *Historias*
-*4*. 🎥 *Entrevista* Presencial
+
+*3*. 📲 Historia *Solteros* (Instagram)
+
+*4*. 🎥 Entrevista *Solteros* (Presencial)
 `;
 
 const saludoEmpresas = `📢 ¡Gracias por tu interés en publicitar con Solteros y Parceros!

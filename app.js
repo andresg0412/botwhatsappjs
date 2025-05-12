@@ -35,7 +35,7 @@ const createEntrevistasFlow = require('./flows/entrevistasFlow');
 const createUnknownFlow = require('./flows/unknownFlow');
 
 // Flujo principal para capturar mensajes que no coinciden con otros flujos
-/*const mainFlow = addKeyword([])
+const mainFlow = addKeyword([])
   .addAction(async (ctx, { flowDynamic, endFlow }) => {
     const chatId = ctx.from;
     console.log('Mensaje recibido:', ctx.body);
@@ -114,7 +114,7 @@ const createUnknownFlow = require('./flows/unknownFlow');
     await antibanUtils.registerMessageSent(chatId);
     return endFlow();
     
-  });*/
+  });
 
 // Función principal para iniciar el bot
 const main = async () => {

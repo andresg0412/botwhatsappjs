@@ -1,7 +1,7 @@
 /**
  * Flujo de empresas
  */
-const { addKeyword } = require('@bot-whatsapp/bot');
+const { addKeyword, EVENTS } = require('@bot-whatsapp/bot');
 const antibanUtils = require('../utils/antibanUtils');
 const {
   saludoSolteros,
@@ -21,7 +21,7 @@ const {
  */
 const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
-  const solteroInteresadoSi = addKeyword([])
+  const solteroInteresadoSi = addKeyword(EVENTS.ACTION)
     .addAnswer(
       enviarFormularioSolterosRandom(),
       { delay: 5000 },
@@ -35,9 +35,48 @@ const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
       }
     );
 
+  
+  const pedirRespuestaCorrectaSoltero = addKeyword(EVENTS.ACTION)
+    .addAnswer(
+      'Opción incorrecta. Las opciones son (*1*) si estas interesado, y (*2*) si no lo estas. Vuelve a escribir tu respuesta por favor.',
+      { capture: true, delay: 5000 },
+      async (ctx, { flowDynamic, endFlow, gotoFlow }) => {
+        try {
+          console.log('Procesando respuesta en el flujo de empresas - Paso 3');
+          const chatId = ctx.from;
+          const userResponse = ctx.body.trim();
+          
+          // Verificar si es seguro enviar un mensaje (anti-ban)
+          if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
+            console.log('No es seguro enviar mensaje de respuesta, saltando');
+            return;
+          }
+          
+          // Navegar al flujo correspondiente según la respuesta
+          if (userResponse.includes('1') || userResponse.includes('si')) {
+            console.log('El cliente esta interesado');
+            return gotoFlow(solteroInteresadoSi);
+          } 
+          else if (userResponse.includes('2') || userResponse.includes('no')) {
+            console.log('El cliente no esta interesado');
+            await flowDynamic("Ok, gracias por tu tiempo. Escribe *hola* cuando necesites algo más.");
+            return endFlow(); // ✅ Termina correctamente el flujo
+          }
+          else {
+            // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
+            console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
+            return gotoFlow(unknownFlow);
+          }
+        } catch (error) {
+          console.error('Error en el flujo de empresas (paso 2):', error);
+          return endFlow();
+        }
+      }
+    );
+
 
   // Usamos una palabra clave específica para este flujo
-  const solterosFlow = addKeyword([])
+  const solterosFlow = addKeyword(['soltero', 'anonimo', 'soltera', 'amor', 'pareja'])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
       saludoSolterosRandom(),
@@ -79,7 +118,7 @@ const createSolterosAnonimosFlow = (provider, { unknownFlow } = {}) => {
           else {
             // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
             console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
-            if (unknownFlow) return gotoFlow(unknownFlow);
+            return gotoFlow(pedirRespuestaCorrectaSoltero);
           }
         } catch (error) {
           console.error('Error en el flujo de soltero (paso 2):', error);

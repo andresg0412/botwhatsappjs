@@ -1,7 +1,7 @@
 /**
  * Flujo de bienvenida para nuevos usuarios
  */
-const { addKeyword } = require('@bot-whatsapp/bot');
+const { addKeyword, EVENTS } = require('@bot-whatsapp/bot');
 const { getRandomResponse, formatMessageWithName } = require('../utils/messageUtils');
 const { applyRandomDelay } = require('../utils/delay');
 const { isWorkingHours, getOutOfHoursMessage } = require('../utils/timeUtils');

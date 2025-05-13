@@ -24,6 +24,12 @@
         "fechaRegistro": "2025-05-10T23:12:51.274Z",
         "informacion": "Digitando información de mi empresa \nNombre y dirección",
         "estado": "pendiente"
+      },
+      {
+        "chatId": "573185215524",
+        "fechaRegistro": "2025-05-13T18:34:21.969Z",
+        "informacion": "Información de la empresa digitada en prueba",
+        "estado": "pendiente"
       }
     ],
     "573209123058": [

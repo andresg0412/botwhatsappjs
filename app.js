@@ -34,87 +34,6 @@ const createHistoriasFlow = require('./flows/historiasFlow');
 const createEntrevistasFlow = require('./flows/entrevistasFlow');
 const createUnknownFlow = require('./flows/unknownFlow');
 
-// Flujo principal para capturar mensajes que no coinciden con otros flujos
-const mainFlow = addKeyword([])
-  .addAction(async (ctx, { flowDynamic, endFlow }) => {
-    const chatId = ctx.from;
-    console.log('Mensaje recibido:', ctx.body);
-    
-    // Verificar si estamos en horario de atención
-    if (!isWorkingHours()) {
-      // Solo responder al primer mensaje fuera de horario
-      if (ctx.body.toLowerCase().match(/^(hola|buenos dias|buenas tardes|buenas noches|hey|menu|ayuda|help)/i)) {
-        const outOfHoursMessage = getOutOfHoursMessage();
-        
-        // Verificar si es seguro enviar un mensaje (anti-ban)
-        if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
-            console.log('No es seguro enviar mensaje, saltando respuesta');
-            return endFlow();
-          }
-
-        await applyRandomDelay(async () => {
-            await flowDynamic(antibanUtils.sanitizeMessage(outOfHoursMessage));
-        });
-          
-        // Registrar mensaje enviado
-        await antibanUtils.registerMessageSent(chatId);
-        return endFlow();
-      }
-      
-      // No responder a otros mensajes fuera de horario
-      return endFlow();
-    }
-    
-    // Detectar la intención del mensaje
-    const intent = detectIntent(ctx.body);
-    console.log('Intención detectada:', intent);
-    
-    // Buscar respuesta en las FAQs
-    const faqResponse = findFaqResponse(ctx.body);
-    
-    let response;
-    
-    if (faqResponse) {
-      // Si encontramos una respuesta en las FAQs
-      response = getRandomResponse(faqResponse);
-    } else {
-      // Si no encontramos una respuesta específica
-      switch (intent) {
-        case 'greeting':
-        case 'farewell':
-        case 'thanks':
-        case 'help':
-        case 'menu':
-        case 'weather':
-        case 'news':
-          // Estos intents son manejados por otros flujos
-          return endFlow();
-        default:
-          // Respuesta para mensajes desconocidos
-          response = getRandomResponse(unknownResponses);
-      }
-    }
-    
-    // Obtener el nombre del usuario si está disponible
-    const userName = ctx.pushName || '';
-    
-    // Personalizar la respuesta con el nombre del usuario
-    response = formatMessageWithName(response, userName);
-    
-    // Verificar si es seguro enviar un mensaje (anti-ban)
-    if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
-        console.log('No es seguro enviar mensaje, saltando respuesta');
-        return endFlow();
-    }
-    await applyRandomDelay(async () => {
-        await flowDynamic(antibanUtils.sanitizeMessage(response));
-    });
-      
-    // Registrar mensaje enviado
-    await antibanUtils.registerMessageSent(chatId);
-    return endFlow();
-    
-  });
 
 // Función principal para iniciar el bot
 const main = async () => {
@@ -132,7 +51,6 @@ const main = async () => {
   const adapterProvider = createProvider(BaileysProvider);
   
   // Crear flujos de conversación
-  const menuFlow = createMenuFlow(adapterProvider);
   const unknownFlow = createUnknownFlow(adapterProvider);
 
   const empresasFlows = createEmpresasFlow(adapterProvider, { unknownFlow });
@@ -175,8 +93,6 @@ const main = async () => {
   // Crear el bot con todos los flujos
   const bot = await createBot({
     flow: createFlow([
-      welcomeFlow,
-      menuFlow,
       empresasFlow,
       empresaInteresadoSi,
       solterosFlow,
@@ -185,7 +101,8 @@ const main = async () => {
       historiasInteresadoSi,
       entrevistaFlow,
       entrevistaInteresadoSi,
-      unknownFlow
+      welcomeFlow,
+      unknownFlow,
       //mainFlow // Flujo principal para capturar mensajes que no coinciden con otros flujos
     ]),
     provider: adapterProvider,

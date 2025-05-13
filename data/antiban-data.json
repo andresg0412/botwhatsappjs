@@ -1,20 +1,20 @@
 {
   "573185215524": {
-    "messageCountHour": 0,
-    "messageCountDay": 0,
-    "lastMessageTime": 1746918775371,
-    "lastUpdated": 1746922099745
+    "messageCountHour": 7,
+    "messageCountDay": 7,
+    "lastMessageTime": 1747161268425,
+    "lastUpdated": 1747161268427
   },
   "573177999872": {
     "messageCountHour": 0,
     "messageCountDay": 0,
     "lastMessageTime": 1746899894857,
-    "lastUpdated": 1746922099745
+    "lastUpdated": 1747161268427
   },
   "573209123058": {
-    "messageCountHour": 1,
-    "messageCountDay": 4,
+    "messageCountHour": 0,
+    "messageCountDay": 0,
     "lastMessageTime": 1746922099744,
-    "lastUpdated": 1746922099745
+    "lastUpdated": 1747161268427
   }
 }

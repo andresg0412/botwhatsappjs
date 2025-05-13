@@ -1,7 +1,7 @@
 /**
  * Flujo de empresas
  */
-const { addKeyword } = require('@bot-whatsapp/bot');
+const { addKeyword, EVENTS } = require('@bot-whatsapp/bot');
 const antibanUtils = require('../utils/antibanUtils');
 const {
   saludoSolteros,
@@ -21,7 +21,7 @@ const {
  */
 const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
   // Crear submenús para cada opción
-  const entrevistaInteresadoSi = addKeyword([])
+  const entrevistaInteresadoSi = addKeyword(EVENTS.ACTION)
     .addAnswer(
       enviarFormularioEntrevistasRandom(),
       { delay: 5000 },
@@ -35,9 +35,47 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
       }
     );
 
+  const pedirRespuestaCorrectaEntrevistas = addKeyword(EVENTS.ACTION)
+    .addAnswer(
+      'Opción incorrecta. Las opciones son (*1*) si estas interesado, y (*2*) si no lo estas. Vuelve a escribir tu respuesta por favor.',
+      { capture: true, delay: 5000 },
+      async (ctx, { flowDynamic, endFlow, gotoFlow }) => {
+        try {
+          console.log('Procesando respuesta en el flujo de empresas - Paso 3');
+          const chatId = ctx.from;
+          const userResponse = ctx.body.trim();
+          
+          // Verificar si es seguro enviar un mensaje (anti-ban)
+          if (!(await antibanUtils.isSafeToSendMessage(chatId))) {
+            console.log('No es seguro enviar mensaje de respuesta, saltando');
+            return;
+          }
+          
+          // Navegar al flujo correspondiente según la respuesta
+          if (userResponse.includes('1') || userResponse.includes('si')) {
+            console.log('El cliente esta interesado');
+            return gotoFlow(entrevistaInteresadoSi);
+          } 
+          else if (userResponse.includes('2') || userResponse.includes('no')) {
+            console.log('El cliente no esta interesado');
+            await flowDynamic("Ok, gracias por tu tiempo. Escribe *hola* cuando necesites algo más.");
+            return endFlow(); // ✅ Termina correctamente el flujo
+          }
+          else {
+            // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
+            console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
+            return gotoFlow(unknownFlow);
+          }
+        } catch (error) {
+          console.error('Error en el flujo de empresas (paso 2):', error);
+          return endFlow();
+        }
+      }
+    );
+
 
   // Usamos una palabra clave específica para este flujo
-  const entrevistaFlow = addKeyword([])
+  const entrevistaFlow = addKeyword(['entrevista', 'presentacion'])
     // Mensaje inicial que siempre se mostrará
     .addAnswer(
       saludoEntrevistaRandom(),
@@ -79,7 +117,7 @@ const createEntrevistasFlow = (provider, { unknownFlow } = {}) => {
           else {
             // Respuesta no reconocida - Redirigir al flujo de respuestas desconocidas
             console.log('Respuesta no reconocida, redirigiendo al flujo de respuestas desconocidas');
-            if (unknownFlow) return gotoFlow(unknownFlow);
+            return gotoFlow(pedirRespuestaCorrectaEntrevistas);
           }
         } catch (error) {
           console.error('Error en el flujo de soltero (paso 2):', error);

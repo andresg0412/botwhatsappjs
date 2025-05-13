@@ -2,26 +2,26 @@
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3A385FD5DD13054F33FF',
+    id: '3A871032AAE6FFB8694D',
     participant: undefined
   },
-  messageTimestamp: 1747161108,
+  messageTimestamp: 1747164911,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
-    conversation: 'Hola',
+    conversation: 'Holi',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Hola',
+  body: 'Holi',
   from: '573185215524'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c23a7f2a-66ac-4e57-9223-8e3a84c778fe',
-  keyword: 'key_a731c4dc-4326-4a01-9e8f-d0ad6be8fefe',
+  ref: 'ans_6c539763-eca3-43e0-b746-36b38d21c35f',
+  keyword: 'key_6d754ce2-cf0c-4829-9d10-141b9f89b34b',
   answer: '__call_action__',
   options: {
     media: null,
@@ -35,11 +35,11 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'cea0b46e772164e839275d35ba11351a'
+  refSerialize: '8b93879f326fff820d692d0cd4c09d72'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0fac6cf0-eeea-4dc9-92a2-551a518f10a5',
-  keyword: 'ans_c23a7f2a-66ac-4e57-9223-8e3a84c778fe',
+  ref: 'ans_d06dc6d7-8164-41e8-8847-5bef6a8f80de',
+  keyword: 'ans_6c539763-eca3-43e0-b746-36b38d21c35f',
   answer: 'Por favor, elige la opción que más te interese 👇\n' +
     '\n' +
     '*1*. 🏢 Pauta *Empresas* (Promociona tu Negocio)\n' +
@@ -61,16 +61,16 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '7bf3d4cbc4e5f3ecbee578e4b7d53135'
+  refSerialize: '8a15a0a69713185d7814fef375a68e24'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3AE1F2608AF28463A1B0',
+    id: '3A4F097846B5492200BF',
     participant: undefined
   },
-  messageTimestamp: 1747161119,
+  messageTimestamp: 1747164926,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
@@ -88,159 +88,10 @@
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3A6B733A264DE312E2E1',
+    id: '3A42F45AFB9D17EFB95E',
     participant: undefined
   },
-  messageTimestamp: 1747161141,
-  pushName: 'Andres G',
-  broadcast: false,
-  message: Message {
-    conversation: '3',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '3',
-  from: '573185215524'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573185215524@s.whatsapp.net',
-    fromMe: false,
-    id: '3AF774A42759EF8B4112',
-    participant: undefined
-  },
-  messageTimestamp: 1747161155,
-  pushName: 'Andres G',
-  broadcast: false,
-  message: Message {
-    conversation: '3',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: '3',
-  from: '573185215524'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_40c48fbf-3223-4d55-979e-426b9821e7b1',
-  keyword: 'key_b660a9fb-d2ff-4d03-bf33-c7c8384d2057',
-  answer: 'No he entendido lo que necesitas. ¿Podrías explicarme en pocas palabras qué es lo que te interesa?',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '5c7105f4c8c828427ba40807d68054e2'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573185215524@s.whatsapp.net',
-    fromMe: false,
-    id: '3AE6D128B1797BB997D4',
-    participant: undefined
-  },
-  messageTimestamp: 1747161192,
-  pushName: 'Andres G',
-  broadcast: false,
-  message: Message {
-    conversation: 'empresa',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'empresa',
-  from: '573185215524'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea',
-  keyword: 'key_8d2b52c9-77a2-4b03-8daf-b1f2d2f914ad',
-  answer: '✨ ¡Nos encanta que quieras sumarte a esta comunidad con tu negocio!\n' +
-    '\n' +
-    'Aquí te comparto el enlace con todo lo que necesitas saber para publicitar con nosotros 📈👇\n' +
-    '\n' +
-    '🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 8000,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '799235ef3d117cd6155fb813f8baf3f3'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf',
-  keyword: 'ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea',
-  answer: '🚀 ¡Estas son nuestras tarifas para llevar tu marca al siguiente nivel!\n' +
-    '\n' +
-    '🎥 Reel en Instagram (con mención) — $600\n' +
-    '🎥 Reel en Instagram (colaboración) — $700\n' +
-    '🎬 Video en TikTok — $600\n' +
-    '📲 1 historia — $150\n' +
-    '📲 3 historias — $300\n' +
-    '🎁 Historia + Sorteo Flash — $350\n' +
-    '📦 Combo poderoso TikTok + Instagram — $900\n',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 11000,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '30930277a39981151d3c7fa73417cba8'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_61e3dc92-52eb-4bd5-b43a-d76d50c5ca7e',
-  keyword: 'ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf',
-  answer: '¿Te interesa saber más y hablar directo conmigo? 🧐\n' +
-    '\n' +
-    'Responde con el número *1* y te atiendo personalmente 🤗✨',
-  options: {
-    media: null,
-    buttons: [],
-    capture: true,
-    child: null,
-    delay: 13500,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: true
-  },
-  refSerialize: '29a85118534b6f5c5a212b06a596e6f0'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573185215524@s.whatsapp.net',
-    fromMe: false,
-    id: '3AAD547155FEBC49BEAD',
-    participant: undefined
-  },
-  messageTimestamp: 1747161241,
+  messageTimestamp: 1747164949,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
@@ -258,20 +109,20 @@
   key: {
     remoteJid: '573185215524@s.whatsapp.net',
     fromMe: false,
-    id: '3AED78D448E339E6152B',
+    id: '3AC1FEAAA7ECE152373C',
     participant: undefined
   },
-  messageTimestamp: 1747161261,
+  messageTimestamp: 1747164997,
   pushName: 'Andres G',
   broadcast: false,
   message: Message {
-    conversation: 'Información de la empresa digitada en prueba',
+    conversation: 'Esta es la información que digita el cliente como prueba, digita el nombre de la empresa, ciudad, tipo de negocio e idea de la promoción',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Información de la empresa digitada en prueba',
+  body: 'Esta es la información que digita el cliente como prueba, digita el nombre de la empresa, ciudad, tipo de negocio e idea de la promoción',
   from: '573185215524'
 }

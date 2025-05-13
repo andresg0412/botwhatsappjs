@@ -30,6 +30,18 @@
         "fechaRegistro": "2025-05-13T18:34:21.969Z",
         "informacion": "Información de la empresa digitada en prueba",
         "estado": "pendiente"
+      },
+      {
+        "chatId": "573185215524",
+        "fechaRegistro": "2025-05-13T19:33:51.458Z",
+        "informacion": "Información digitada como respuesta prueba",
+        "estado": "pendiente"
+      },
+      {
+        "chatId": "573185215524",
+        "fechaRegistro": "2025-05-13T19:36:38.802Z",
+        "informacion": "Esta es la información que digita el cliente como prueba, digita el nombre de la empresa, ciudad, tipo de negocio e idea de la promoción",
+        "estado": "pendiente"
       }
     ],
     "573209123058": [

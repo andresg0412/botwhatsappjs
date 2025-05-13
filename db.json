@@ -1,15 +1,15 @@
 [
   {
-    "ref": "45392375-e67c-4a16-b428-57c9e43792cb",
-    "keyword": "223bd8e8b0a1cfaffb0c88fc76bc6ddc",
-    "answer": "Hola",
+    "ref": "7ebe7432-83e8-42bb-a9b3-b823fb14411e",
+    "keyword": "e92a62998e85ad35e7c5d468520f6e0b",
+    "answer": "Holi",
     "options": {},
     "from": "573185215524",
-    "refSerialize": "c22e4066d61d81721def9b25d8a397e8"
+    "refSerialize": "5690e12d4fabb1b2bf4e7209cefada3b"
   },
   {
-    "ref": "ans_c23a7f2a-66ac-4e57-9223-8e3a84c778fe",
-    "keyword": "key_a731c4dc-4326-4a01-9e8f-d0ad6be8fefe",
+    "ref": "ans_6c539763-eca3-43e0-b746-36b38d21c35f",
+    "keyword": "key_6d754ce2-cf0c-4829-9d10-141b9f89b34b",
     "answer": "__call_action__",
     "options": {
       "media": null,
@@ -23,13 +23,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "cea0b46e772164e839275d35ba11351a",
+    "refSerialize": "8b93879f326fff820d692d0cd4c09d72",
     "from": "573185215524"
   },
   {
-    "ref": "68c677b1-aba0-4547-be2d-1d8af371b7c6",
+    "ref": "7f75961c-d524-46eb-92bd-fb50e33902e7",
     "keyword": null,
-    "answer": "¡Hola Andres G! Soy Conny, creadora de Solteros y Parceros 💘\nGracias por escribirnos 🙌\n\n📲 A través de nuestros canales en Instagram y TikTok conectamos a solteros y solteras de todo el mundo 🌍 y también ofrecemos espacios para que marcas se den a conocer",
+    "answer": "¡Buenas tardes! 😊 Soy Conny, la mente detrás de Solteros y Parceros 💘\nQué bueno leerte esta tarde ☕\n📲 En Instagram y TikTok conectamos a solteros y solteras del mundo 🌍\nY ofrecemos espacios ideales para que las marcas se destaquen 💡",
     "options": {
       "media": null,
       "buttons": [],
@@ -37,11 +37,11 @@
       "delay": 0
     },
     "from": "573185215524",
-    "refSerialize": "afb6346b7465616e7f38e69404c140e5"
+    "refSerialize": "8cc44756f7c1c6e48205ff75bc6f99f0"
   },
   {
-    "ref": "ans_0fac6cf0-eeea-4dc9-92a2-551a518f10a5",
-    "keyword": "ans_c23a7f2a-66ac-4e57-9223-8e3a84c778fe",
+    "ref": "ans_d06dc6d7-8164-41e8-8847-5bef6a8f80de",
+    "keyword": "ans_6c539763-eca3-43e0-b746-36b38d21c35f",
     "answer": "Por favor, elige la opción que más te interese 👇\n\n*1*. 🏢 Pauta *Empresas* (Promociona tu Negocio)\n\n*2*. 💘 Presentando *Solteros* (con o sin foto)\n\n*3*. 📲 Historia *Solteros* (Instagram)\n\n*4*. 🎥 Entrevista *Solteros* (Presencial)\n",
     "options": {
       "media": null,
@@ -55,21 +55,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "7bf3d4cbc4e5f3ecbee578e4b7d53135",
+    "refSerialize": "8a15a0a69713185d7814fef375a68e24",
     "from": "573185215524"
   },
   {
-    "ref": "c6a815a3-d902-43ee-a7c6-e509927bbf91",
-    "keyword": "7bf3d4cbc4e5f3ecbee578e4b7d53135",
+    "ref": "720a5be1-84b8-4988-a3e6-32a23c2f2469",
+    "keyword": "8a15a0a69713185d7814fef375a68e24",
     "answer": "1",
     "options": {},
     "from": "573185215524",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea",
-    "keyword": "key_8d2b52c9-77a2-4b03-8daf-b1f2d2f914ad",
-    "answer": "✨ ¡Nos encanta que quieras sumarte a esta comunidad con tu negocio!\n\nAquí te comparto el enlace con todo lo que necesitas saber para publicitar con nosotros 📈👇\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n",
+    "ref": "ans_3b699cef-2bed-4941-8a1f-ccd9b197b4b1",
+    "keyword": "key_40ef240f-7ff0-43b0-a6db-b50073580ed5",
+    "answer": "🎉 ¡Qué emoción que quieras publicitar con Solteros y Parceros!\n\nAquí tienes el enlace con toda la info sobre cómo podemos hacer crecer tu marca 🚀👇\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -82,13 +82,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "799235ef3d117cd6155fb813f8baf3f3",
+    "refSerialize": "bff7b725924f7623bf0795544b10a077",
     "from": "573185215524"
   },
   {
-    "ref": "ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf",
-    "keyword": "ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea",
-    "answer": "🚀 ¡Estas son nuestras tarifas para llevar tu marca al siguiente nivel!\n\n🎥 Reel en Instagram (con mención) — $600\n🎥 Reel en Instagram (colaboración) — $700\n🎬 Video en TikTok — $600\n📲 1 historia — $150\n📲 3 historias — $300\n🎁 Historia + Sorteo Flash — $350\n📦 Combo poderoso TikTok + Instagram — $900\n",
+    "ref": "ans_a1a7b267-8760-494b-b36c-3f9faed71bdc",
+    "keyword": "ans_3b699cef-2bed-4941-8a1f-ccd9b197b4b1",
+    "answer": "✨ ¡Estas son nuestras opciones para que brilles con nosotros!\n\n📱 1 historia — $150\n📱 3 historias — $300\n🎬 Video en TikTok — $600\n🎥 Reel en Instagram (con mención) — $600\n🎥 Reel en Instagram (colaboración) — $700\n🎁 Historia + Sorteo Flash — $350\n📦 Combo TikTok + Instagram — $900\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -101,13 +101,13 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "30930277a39981151d3c7fa73417cba8",
+    "refSerialize": "59e47309a8d7a9bf9603c23f398f837b",
     "from": "573185215524"
   },
   {
-    "ref": "ans_61e3dc92-52eb-4bd5-b43a-d76d50c5ca7e",
-    "keyword": "ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf",
-    "answer": "¿Te interesa saber más y hablar directo conmigo? 🧐\n\nResponde con el número *1* y te atiendo personalmente 🤗✨",
+    "ref": "ans_44cd7b0d-f449-47bc-aefd-fa07e9147d25",
+    "keyword": "ans_a1a7b267-8760-494b-b36c-3f9faed71bdc",
+    "answer": "Si estás interesado y quieres más información personalizada, por favor responde con el número *1* nuevamente y te atenderé directamente 🤝",
     "options": {
       "media": null,
       "buttons": [],
@@ -120,150 +120,20 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "29a85118534b6f5c5a212b06a596e6f0",
+    "refSerialize": "0261e7ae3f87b99107a25d47e7f260a0",
     "from": "573185215524"
   },
   {
-    "ref": "d66ab111-854c-43a7-afeb-db13a860c6c7",
-    "keyword": "29a85118534b6f5c5a212b06a596e6f0",
-    "answer": "3",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
-  },
-  {
-    "ref": "ans_b165b4e3-bb90-4dca-817f-f69614874fc1",
-    "keyword": "key_632f9fde-202d-4458-806a-565b1009e7bb",
-    "answer": "Opción incorrecta. Las opciones son (*1*) si estas interesado, y (*2*) si no lo estas. Vuelve a escribir tu respuesta por favor.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": true,
-      "child": null,
-      "delay": 5000,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "from": "573185215524"
-  },
-  {
-    "ref": "21fa5b8e-25c1-496e-9db9-cf1b04799e39",
-    "answer": "3",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "7af65864494b12f0f7ef00589f4d3979"
-  },
-  {
-    "ref": "ans_40c48fbf-3223-4d55-979e-426b9821e7b1",
-    "keyword": "key_b660a9fb-d2ff-4d03-bf33-c7c8384d2057",
-    "answer": "No he entendido lo que necesitas. ¿Podrías explicarme en pocas palabras qué es lo que te interesa?",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": true,
-      "child": null,
-      "delay": 0,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "5c7105f4c8c828427ba40807d68054e2",
-    "from": "573185215524"
-  },
-  {
-    "ref": "c951d2c8-3ad6-49e4-8159-e64173a4818c",
-    "keyword": "5c7105f4c8c828427ba40807d68054e2",
-    "answer": "empresa",
-    "options": {},
-    "from": "573185215524",
-    "refSerialize": "538dc4722960922561a3cd5972fe119d"
-  },
-  {
-    "ref": "cad5594b-787d-4c69-ae67-cc2e2c75dde1",
-    "keyword": null,
-    "answer": "Entiendo que estás interesado en nuestros servicios para empresas. Te redirijo a esa sección.",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "delay": 0
-    },
-    "from": "573185215524",
-    "refSerialize": "34050e0786d855cefd51282098dab960"
-  },
-  {
-    "ref": "ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea",
-    "keyword": "key_8d2b52c9-77a2-4b03-8daf-b1f2d2f914ad",
-    "answer": "✨ ¡Nos encanta que quieras sumarte a esta comunidad con tu negocio!\n\nAquí te comparto el enlace con todo lo que necesitas saber para publicitar con nosotros 📈👇\n\n🔗 https://www.canva.com/design/DAGi8ysn93k/WxddYPVskRBb8BQ6HP8sQg/view\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 8000,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "799235ef3d117cd6155fb813f8baf3f3",
-    "from": "573185215524"
-  },
-  {
-    "ref": "ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf",
-    "keyword": "ans_5ca8f67c-a9cd-408d-85df-2d2a3b8f74ea",
-    "answer": "🚀 ¡Estas son nuestras tarifas para llevar tu marca al siguiente nivel!\n\n🎥 Reel en Instagram (con mención) — $600\n🎥 Reel en Instagram (colaboración) — $700\n🎬 Video en TikTok — $600\n📲 1 historia — $150\n📲 3 historias — $300\n🎁 Historia + Sorteo Flash — $350\n📦 Combo poderoso TikTok + Instagram — $900\n",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": false,
-      "child": null,
-      "delay": 11000,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "30930277a39981151d3c7fa73417cba8",
-    "from": "573185215524"
-  },
-  {
-    "ref": "ans_61e3dc92-52eb-4bd5-b43a-d76d50c5ca7e",
-    "keyword": "ans_b3c8a1ef-bba8-4174-b338-ecd9ff1636cf",
-    "answer": "¿Te interesa saber más y hablar directo conmigo? 🧐\n\nResponde con el número *1* y te atiendo personalmente 🤗✨",
-    "options": {
-      "media": null,
-      "buttons": [],
-      "capture": true,
-      "child": null,
-      "delay": 13500,
-      "idle": null,
-      "ref": null,
-      "nested": [],
-      "keyword": {},
-      "callback": true
-    },
-    "refSerialize": "29a85118534b6f5c5a212b06a596e6f0",
-    "from": "573185215524"
-  },
-  {
-    "ref": "a5f7c8cf-b298-467a-b3a8-b2a8394e1310",
-    "keyword": "29a85118534b6f5c5a212b06a596e6f0",
+    "ref": "e5aac954-dcbf-4248-9188-159e9e40df49",
+    "keyword": "0261e7ae3f87b99107a25d47e7f260a0",
     "answer": "1",
     "options": {},
     "from": "573185215524",
     "refSerialize": "290236b1d481a790a200ea6e94b2122a"
   },
   {
-    "ref": "ans_2b0e1aa8-7925-4729-9eba-c36f06323a1e",
-    "keyword": "key_d26979f0-eb72-4346-9035-09316a8137a8",
+    "ref": "ans_a70be729-55c2-40ad-8063-1a9951ac577b",
+    "keyword": "key_70fbb88f-afc2-42a8-81c7-5234e2473b25",
     "answer": "🚀 ¡Gracias por tu interés en anunciar con Solteros y Parceros!\n\nPara seguir, por favor mándanos la siguiente información (todo juntito en un mensaje):\n\n📌 Nombre de tu marca\n📍 País, ciudad y dirección completa\n🏪 Qué tipo de negocio tienes\n💡 Qué idea o tono quieres para la promoción\n\n¡Nos encantará ayudarte a destacar! 🔥\n",
     "options": {
       "media": null,
@@ -277,21 +147,21 @@
       "keyword": {},
       "callback": true
     },
-    "refSerialize": "ec0a67552149d77bf8d6f15d656df873",
+    "refSerialize": "24749f0e0aef4a28b0b3f075953ef4a1",
     "from": "573185215524"
   },
   {
-    "ref": "98f90b9e-20e4-4444-b01c-a6f5b6eae8cb",
-    "keyword": "ec0a67552149d77bf8d6f15d656df873",
-    "answer": "Información de la empresa digitada en prueba",
+    "ref": "1ce5316d-82cf-4ce7-bffd-35826efebe06",
+    "keyword": "24749f0e0aef4a28b0b3f075953ef4a1",
+    "answer": "Esta es la información que digita el cliente como prueba, digita el nombre de la empresa, ciudad, tipo de negocio e idea de la promoción",
     "options": {},
     "from": "573185215524",
-    "refSerialize": "32752658ad3cc8629262c50a41ccb600"
+    "refSerialize": "7ff514eb77e28a0e0646adab962ffcfd"
   },
   {
-    "ref": "63c2927f-59ae-4e34-afc7-aafaed4ac123",
+    "ref": "406286df-f9e8-47d9-bb10-1e2fc9d9427a",
     "keyword": null,
-    "answer": "🙌 ¡Gracias por confiar en nosotros!\n\nYa recibimos tu información y la estaremos revisando con atención.\nEn máximo 48 horas me pondré en contacto contigo para proponerte las opciones más alineadas a tus objetivos, gustos y nuestra experiencia con marcas 💡📈\n",
+    "answer": "🙏 ¡Mil gracias por compartirnos tus datos!\n\nTu información ya está en nuestras manos, y en las próximas 48 horas me comunicaré contigo para mostrarte las mejores alternativas según tu marca, tu enfoque y todo lo que hemos aprendido promoviendo negocios como el tuyo 💼✨\n",
     "options": {
       "media": null,
       "buttons": [],
@@ -299,6 +169,6 @@
       "delay": 0
     },
     "from": "573185215524",
-    "refSerialize": "50dcc86b3144153a565f867cf46d581c"
+    "refSerialize": "929b63b96c3f051f42b7f676f4fbc097"
   }
 ]

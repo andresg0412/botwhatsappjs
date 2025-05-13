@@ -9,6 +9,36 @@ const {
   enviarFormularioHistoriasRandom
 } = require('../responses/responsesHistorias');
 
+
+/**
+ * Envía una notificación al administrador sobre un cliente interesado
+ * @param {Object} provider - Proveedor de WhatsApp
+ * @param {string} clienteNumero - Número del cliente
+ * @param {string} clienteNombre - Nombre del cliente
+ * @param {string} clienteInfo - Información proporcionada por el cliente
+ */
+const notificarAdministrador = async (provider, clienteNumero, clienteNombre) => {
+  try {
+    // Número del administrador (reemplaza con el número real, incluyendo código de país)
+    const adminNumber = "573209123058" // Ejemplo: "34612345678" para España
+
+    // Crear mensaje de notificación
+    const mensaje =
+      `🔔 *Nuevo cliente interesado*\n\n` +
+      `🔔 *Servicio*: Historias\n\n` +
+      `*Nombre:* ${clienteNombre}\n` +
+      `*Teléfono:* ${clienteNumero}\n` +
+      `*Fecha:* ${new Date().toLocaleString()}`
+
+    // Enviar mensaje al administrador
+    await provider.getInstance().sendMessage(`${adminNumber}@c.us`, { text: mensaje })
+    console.log("✅ Notificación enviada al administrador")
+  } catch (error) {
+    console.error("❌ Error al enviar notificación al administrador:", error)
+  }
+}
+
+
 /**
  * Crea el flujo de empresas
  * @param {Object} provider - Proveedor de WhatsApp
@@ -22,6 +52,10 @@ const createHistoriasFlow = (provider, { unknownFlow } = {}) => {
       { delay: 5000 },
       async (ctx, { endFlow }) => {
         const chatId = ctx.from;
+        const nombreCliente = ctx.pushName || "Cliente"
+
+        // Enviar notificación al administrador
+        await notificarAdministrador(provider, chatId, nombreCliente);
 
         // Registrar mensaje enviado
         await antibanUtils.registerMessageSent(chatId);

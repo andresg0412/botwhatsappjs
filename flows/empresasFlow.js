@@ -20,6 +20,38 @@ const {
   cierreEmpresasRandom,
 } = require('../responses/responsesEmpresas');
 
+
+
+/**
+ * Envía una notificación al administrador sobre un cliente interesado
+ * @param {Object} provider - Proveedor de WhatsApp
+ * @param {string} clienteNumero - Número del cliente
+ * @param {string} clienteNombre - Nombre del cliente
+ * @param {string} clienteInfo - Información proporcionada por el cliente
+ */
+const notificarAdministrador = async (provider, clienteNumero, clienteNombre, clienteInfo) => {
+  try {
+    // Número del administrador (reemplaza con el número real, incluyendo código de país)
+    const adminNumber = "573209123058" // Ejemplo: "34612345678" para España
+
+    // Crear mensaje de notificación
+    const mensaje =
+      `🔔 *Nuevo cliente interesado*\n\n` +
+      `🔔 *Servicio*: Pauta Empresas\n\n` +
+      `*Nombre:* ${clienteNombre}\n` +
+      `*Teléfono:* ${clienteNumero}\n` +
+      `*Información:* ${clienteInfo}\n` +
+      `*Fecha:* ${new Date().toLocaleString()}`
+
+    // Enviar mensaje al administrador
+    await provider.getInstance().sendMessage(`${adminNumber}@c.us`, { text: mensaje })
+    console.log("✅ Notificación enviada al administrador")
+  } catch (error) {
+    console.error("❌ Error al enviar notificación al administrador:", error)
+  }
+}
+
+
 /**
  * Crea el flujo de empresas
  * @param {Object} provider - Proveedor de WhatsApp
@@ -34,10 +66,14 @@ const createEmpresasFlow = (provider, { unknownFlow } = {}) => {
       async (ctx, { flowDynamic, endFlow }) => {
         const chatId = ctx.from;
         const respuesta = ctx.body;
+        const nombreCliente = ctx.pushName || "Cliente"
         console.log('Respuesta en submenú servicios:', respuesta);
         
         //Guardar informacion recibida asociada al chatid
         await guardarInformacionEmpresa(chatId, respuesta);
+
+        // Enviar notificación al administrador
+        await notificarAdministrador(provider, chatId, nombreCliente, respuesta)
 
         //Responder diciendo que muchas gracias por la informacion, revisaremos la informacion y nos podremos en contacto contigo directamente en las proximas 48 horas
         await applyRandomDelay(async () => {
